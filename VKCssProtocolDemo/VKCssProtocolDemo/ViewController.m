@@ -16,19 +16,12 @@
 @implementation ViewController
 
 -(void)initCss{
-//    [VKCssClassManager addCssClassName:@"AKai背景色" SytleName:@"background-color" styleValue:@"yellow"];
     
-    //    [VKCssClassManager addCssClassName:@"AKai标题字色字号" SytleName:@"font-color" styleValue:@"black"];
-    //
-    //    [VKCssClassManager addCssClassName:@"AKai标题字色字号" SytleName:@"font-size" styleValue:@"30"];
     
-    @defCssClass(defName(@"AKai背景色"),
-                 defStyles(@"background-color:yellow"));
+    @defCssClass(defName(@"标准工具栏样式"),
+                 defStyles(@"background-color:blue"));
     
-    //    @defCssClass(defName(@"AKai标题字色字号"),
-    //                    defStyles(@"font-color:black",@"font-size:30"));
-    
-    @defCssClass(defName(@"AKai标题字色字号"),
+    @defCssClass(defName(@"标准工具栏配字"),
                  defStyles(defStyle(@"font-color",@"black"),
                            defStyle(@"font-size",@"30")));
     
@@ -37,19 +30,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    //    UIView *abc = [[UIView alloc]initWithFrame:CGRectMake(40, 40, 100, 100)];
-    //    abc.cssClass = @"凯哥的一号标题";
-    //    [self.view addSubview:abc];
-    
     [self initCss];
     
     UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(40, 140, 100, 40)];
-    //    @cssStyleProtocol(btabc,@"background-color:yellow font-color:black font-size:30");
-    btabc.cssClass = @"AKai标题字色字号 AKai背景色";
-//    @cssClassProtocol(btabc,@"AKai标题字色字号 AKai背景色");
     [btabc setTitle:@"aaaa" forState:UIControlStateNormal];
+    btabc.cssClass = @"标准工具栏配色 标准工具栏配字";
     [self.view addSubview:btabc];
 }
 
