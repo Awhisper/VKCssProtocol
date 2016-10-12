@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CED744B1DAE550E0021109E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744A1DAE550E0021109E /* main.m */; };
+		6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744D1DAE550E0021109E /* AppDelegate.m */; };
+		6CED74511DAE550E0021109E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74501DAE550E0021109E /* ViewController.m */; };
+		6CED74541DAE550E0021109E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CED74521DAE550E0021109E /* Main.storyboard */; };
+		6CED74561DAE550E0021109E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CED74551DAE550E0021109E /* Assets.xcassets */; };
+		6CED74591DAE550E0021109E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CED74571DAE550E0021109E /* LaunchScreen.storyboard */; };
+		6CED74781DAE55ED0021109E /* UIColor+VKUtlities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74641DAE55ED0021109E /* UIColor+VKUtlities.m */; };
+		6CED74791DAE55ED0021109E /* UIView+VKCssProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74661DAE55ED0021109E /* UIView+VKCssProtocol.m */; };
+		6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74691DAE55ED0021109E /* VKCssClassManager.m */; };
+		6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED746B1DAE55ED0021109E /* VKCssClassModal.m */; };
+		6CED747C1DAE55ED0021109E /* VKBackgroundcolorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED746F1DAE55ED0021109E /* VKBackgroundcolorStyle.m */; };
+		6CED747D1DAE55ED0021109E /* VKCssStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74711DAE55ED0021109E /* VKCssStyleManager.m */; };
+		6CED747E1DAE55ED0021109E /* VKFontColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74751DAE55ED0021109E /* VKFontColorStyle.m */; };
+		6CED747F1DAE55ED0021109E /* VKFontSizeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74771DAE55ED0021109E /* VKFontSizeStyle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCssProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CED744A1DAE550E0021109E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CED744C1DAE550E0021109E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CED744D1DAE550E0021109E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CED744F1DAE550E0021109E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6CED74501DAE550E0021109E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6CED74531DAE550E0021109E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CED74551DAE550E0021109E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CED74581DAE550E0021109E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CED745A1DAE550E0021109E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CED74621DAE55ED0021109E /* NSObject+VKSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VKSingleton.h"; sourceTree = "<group>"; };
+		6CED74631DAE55ED0021109E /* UIColor+VKUtlities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VKUtlities.h"; sourceTree = "<group>"; };
+		6CED74641DAE55ED0021109E /* UIColor+VKUtlities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VKUtlities.m"; sourceTree = "<group>"; };
+		6CED74651DAE55ED0021109E /* UIView+VKCssProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VKCssProtocol.h"; sourceTree = "<group>"; };
+		6CED74661DAE55ED0021109E /* UIView+VKCssProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VKCssProtocol.m"; sourceTree = "<group>"; };
+		6CED74681DAE55ED0021109E /* VKCssClassManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssClassManager.h; sourceTree = "<group>"; };
+		6CED74691DAE55ED0021109E /* VKCssClassManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssClassManager.m; sourceTree = "<group>"; };
+		6CED746A1DAE55ED0021109E /* VKCssClassModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssClassModal.h; sourceTree = "<group>"; };
+		6CED746B1DAE55ED0021109E /* VKCssClassModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssClassModal.m; sourceTree = "<group>"; };
+		6CED746C1DAE55ED0021109E /* VKCssProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssProtocol.h; sourceTree = "<group>"; };
+		6CED746E1DAE55ED0021109E /* VKBackgroundcolorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBackgroundcolorStyle.h; sourceTree = "<group>"; };
+		6CED746F1DAE55ED0021109E /* VKBackgroundcolorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBackgroundcolorStyle.m; sourceTree = "<group>"; };
+		6CED74701DAE55ED0021109E /* VKCssStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStyleManager.h; sourceTree = "<group>"; };
+		6CED74711DAE55ED0021109E /* VKCssStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssStyleManager.m; sourceTree = "<group>"; };
+		6CED74721DAE55ED0021109E /* VKCssStylePch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStylePch.h; sourceTree = "<group>"; };
+		6CED74731DAE55ED0021109E /* VKCssStyleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStyleProtocol.h; sourceTree = "<group>"; };
+		6CED74741DAE55ED0021109E /* VKFontColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontColorStyle.h; sourceTree = "<group>"; };
+		6CED74751DAE55ED0021109E /* VKFontColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontColorStyle.m; sourceTree = "<group>"; };
+		6CED74761DAE55ED0021109E /* VKFontSizeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontSizeStyle.h; sourceTree = "<group>"; };
+		6CED74771DAE55ED0021109E /* VKFontSizeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontSizeStyle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CED74431DAE550E0021109E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CED743D1DAE550E0021109E = {
+			isa = PBXGroup;
+			children = (
+				6CED74601DAE55ED0021109E /* VKCssProtocol */,
+				6CED74481DAE550E0021109E /* VKCssProtocolDemo */,
+				6CED74471DAE550E0021109E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CED74471DAE550E0021109E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CED74481DAE550E0021109E /* VKCssProtocolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6CED744C1DAE550E0021109E /* AppDelegate.h */,
+				6CED744D1DAE550E0021109E /* AppDelegate.m */,
+				6CED744F1DAE550E0021109E /* ViewController.h */,
+				6CED74501DAE550E0021109E /* ViewController.m */,
+				6CED74521DAE550E0021109E /* Main.storyboard */,
+				6CED74551DAE550E0021109E /* Assets.xcassets */,
+				6CED74571DAE550E0021109E /* LaunchScreen.storyboard */,
+				6CED745A1DAE550E0021109E /* Info.plist */,
+				6CED74491DAE550E0021109E /* Supporting Files */,
+			);
+			path = VKCssProtocolDemo;
+			sourceTree = "<group>";
+		};
+		6CED74491DAE550E0021109E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CED744A1DAE550E0021109E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CED74601DAE55ED0021109E /* VKCssProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				6CED74611DAE55ED0021109E /* VKCategory */,
+				6CED74671DAE55ED0021109E /* VKCssClass */,
+				6CED746C1DAE55ED0021109E /* VKCssProtocol.h */,
+				6CED746D1DAE55ED0021109E /* VKCssStyle */,
+			);
+			name = VKCssProtocol;
+			path = ../VKCssProtocol;
+			sourceTree = "<group>";
+		};
+		6CED74611DAE55ED0021109E /* VKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				6CED74621DAE55ED0021109E /* NSObject+VKSingleton.h */,
+				6CED74631DAE55ED0021109E /* UIColor+VKUtlities.h */,
+				6CED74641DAE55ED0021109E /* UIColor+VKUtlities.m */,
+				6CED74651DAE55ED0021109E /* UIView+VKCssProtocol.h */,
+				6CED74661DAE55ED0021109E /* UIView+VKCssProtocol.m */,
+			);
+			path = VKCategory;
+			sourceTree = "<group>";
+		};
+		6CED74671DAE55ED0021109E /* VKCssClass */ = {
+			isa = PBXGroup;
+			children = (
+				6CED74681DAE55ED0021109E /* VKCssClassManager.h */,
+				6CED74691DAE55ED0021109E /* VKCssClassManager.m */,
+				6CED746A1DAE55ED0021109E /* VKCssClassModal.h */,
+				6CED746B1DAE55ED0021109E /* VKCssClassModal.m */,
+			);
+			path = VKCssClass;
+			sourceTree = "<group>";
+		};
+		6CED746D1DAE55ED0021109E /* VKCssStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6CED746E1DAE55ED0021109E /* VKBackgroundcolorStyle.h */,
+				6CED746F1DAE55ED0021109E /* VKBackgroundcolorStyle.m */,
+				6CED74701DAE55ED0021109E /* VKCssStyleManager.h */,
+				6CED74711DAE55ED0021109E /* VKCssStyleManager.m */,
+				6CED74721DAE55ED0021109E /* VKCssStylePch.h */,
+				6CED74731DAE55ED0021109E /* VKCssStyleProtocol.h */,
+				6CED74741DAE55ED0021109E /* VKFontColorStyle.h */,
+				6CED74751DAE55ED0021109E /* VKFontColorStyle.m */,
+				6CED74761DAE55ED0021109E /* VKFontSizeStyle.h */,
+				6CED74771DAE55ED0021109E /* VKFontSizeStyle.m */,
+			);
+			path = VKCssStyle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CED74451DAE550E0021109E /* VKCssProtocolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CED745D1DAE550E0021109E /* Build configuration list for PBXNativeTarget "VKCssProtocolDemo" */;
+			buildPhases = (
+				6CED74421DAE550E0021109E /* Sources */,
+				6CED74431DAE550E0021109E /* Frameworks */,
+				6CED74441DAE550E0021109E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKCssProtocolDemo;
+			productName = VKCssProtocolDemo;
+			productReference = 6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CED743E1DAE550E0021109E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = baidu;
+				TargetAttributes = {
+					6CED74451DAE550E0021109E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6CED74411DAE550E0021109E /* Build configuration list for PBXProject "VKCssProtocolDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CED743D1DAE550E0021109E;
+			productRefGroup = 6CED74471DAE550E0021109E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CED74451DAE550E0021109E /* VKCssProtocolDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CED74441DAE550E0021109E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED74591DAE550E0021109E /* LaunchScreen.storyboard in Resources */,
+				6CED74561DAE550E0021109E /* Assets.xcassets in Resources */,
+				6CED74541DAE550E0021109E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CED74421DAE550E0021109E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED74791DAE55ED0021109E /* UIView+VKCssProtocol.m in Sources */,
+				6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */,
+				6CED747D1DAE55ED0021109E /* VKCssStyleManager.m in Sources */,
+				6CED74511DAE550E0021109E /* ViewController.m in Sources */,
+				6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */,
+				6CED747E1DAE55ED0021109E /* VKFontColorStyle.m in Sources */,
+				6CED747C1DAE55ED0021109E /* VKBackgroundcolorStyle.m in Sources */,
+				6CED744B1DAE550E0021109E /* main.m in Sources */,
+				6CED74781DAE55ED0021109E /* UIColor+VKUtlities.m in Sources */,
+				6CED747F1DAE55ED0021109E /* VKFontSizeStyle.m in Sources */,
+				6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CED74521DAE550E0021109E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED74531DAE550E0021109E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CED74571DAE550E0021109E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED74581DAE550E0021109E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CED745B1DAE550E0021109E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CED745C1DAE550E0021109E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CED745E1DAE550E0021109E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VKCssProtocolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.VKCssProtocolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CED745F1DAE550E0021109E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VKCssProtocolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.VKCssProtocolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CED74411DAE550E0021109E /* Build configuration list for PBXProject "VKCssProtocolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CED745B1DAE550E0021109E /* Debug */,
+				6CED745C1DAE550E0021109E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CED745D1DAE550E0021109E /* Build configuration list for PBXNativeTarget "VKCssProtocolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CED745E1DAE550E0021109E /* Debug */,
+				6CED745F1DAE550E0021109E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CED743E1DAE550E0021109E /* Project object */;
+}
