@@ -19,9 +19,9 @@
     
     
     @defCssClass(defName(@"标准工具栏样式"),
-                 defStyles(@"background-color:blue"));
+                 defStyles(@"background-color:yellow"));
     
-    @defCssClass(defName(@"标准工具栏配字"),
+    @defCssClass(defName(@"标准配字"),
                  defStyles(defStyle(@"font-color",@"black"),
                            defStyle(@"font-size",@"30")));
     
@@ -32,9 +32,9 @@
     [super viewDidLoad];
     [self initCss];
     
-    UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(40, 140, 100, 40)];
+    UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
     [btabc setTitle:@"aaaa" forState:UIControlStateNormal];
-    btabc.cssClass = @"标准工具栏配色 标准工具栏配字";
+    btabc.cssClass = @"标准工具栏样式 标准配字";
     [self.view addSubview:btabc];
 }
 
