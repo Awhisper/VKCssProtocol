@@ -10,13 +10,14 @@
 #import "UIColor+VKUtlities.h"
 
 @implementation VKFontColorStyle
+
 VK_REGISTE_ATTRIBUTE()
 
-+(NSString *)styleName{
++ (NSString *)styleName{
     return @"font-color";
 }
 
-+(void)setTarget:(id)target styleValue:(id)value{
++ (void)setTarget:(id)target styleValue:(id)value{
     UIColor *fontColor;
     if ([value isKindOfClass:[UIColor class]]) {
         fontColor = value;

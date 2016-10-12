@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#define classProtocol(target,cssClasses) \
+#define cssClassProtocol(target,cssClasses) \
 autoreleasepool{ target.cssClass = cssClasses;}; \
 
-#define styleProtocol(target,cssStyles) \
+#define cssStyleProtocol(target,cssStyles) \
 autoreleasepool{ target.cssStyle = cssStyles;}; \
 
 @interface UIView (VKCssProtocol)

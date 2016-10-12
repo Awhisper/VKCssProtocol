@@ -16,7 +16,7 @@
 @implementation ViewController
 
 -(void)initCss{
-    [VKCssClassManager addCssClassName:@"AKai背景色" SytleName:@"background-color" styleValue:@"yellow"];
+//    [VKCssClassManager addCssClassName:@"AKai背景色" SytleName:@"background-color" styleValue:@"yellow"];
     
     //    [VKCssClassManager addCssClassName:@"AKai标题字色字号" SytleName:@"font-color" styleValue:@"black"];
     //
@@ -47,7 +47,8 @@
     
     UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(40, 140, 100, 40)];
     //    @cssStyleProtocol(btabc,@"background-color:yellow font-color:black font-size:30");
-    @classProtocol(btabc,@"AKai标题字色字号 AKai背景色")
+    btabc.cssClass = @"AKai标题字色字号 AKai背景色";
+//    @cssClassProtocol(btabc,@"AKai标题字色字号 AKai背景色");
     [btabc setTitle:@"aaaa" forState:UIControlStateNormal];
     [self.view addSubview:btabc];
 }

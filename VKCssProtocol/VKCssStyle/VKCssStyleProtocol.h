@@ -10,8 +10,8 @@
 
 @protocol VKCssStyleProtocol <NSObject>
 
-+(NSString *)styleName;
++ (NSString *)styleName;
 
-+(void)setTarget:(id)target styleValue:(id)value;
++ (void)setTarget:(id)target styleValue:(id)value;
 
 @end

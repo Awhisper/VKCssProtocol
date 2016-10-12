@@ -9,20 +9,8 @@
 #import "VKCssClassManager.h"
 #import "VKCssStyleManager.h"
 
-
-//void defineCssClassFunc(NSString *format, ...){
-//    va_list arglist;
-//    va_start(arglist, format);
-//    NSString *stringArg;
-//    NSMutableArray *stringArr = [[NSMutableArray alloc]init];
-//    while ((stringArg = va_arg(arglist, id))) {
-//        [stringArr addObject:stringArg];
-//    }
-//    va_end(arglist);
-//    [VKCssClassManager defineCssClassVarList:stringArr];
-//}
-
 @implementation VKCssClassManager
+
 VK_DEF_SINGLETON
 
 -(instancetype)init{
@@ -33,11 +21,11 @@ VK_DEF_SINGLETON
     return self;
 }
 
-+(void)addCssClassName:(NSString *)className SytleName:(NSString *)styleName styleValue:(id)styleValue{
-    [[VKCssClassManager singleton]addCssClassName:className SytleName:styleName styleValue:styleValue];
++(void)addCssClassName:(NSString *)className sytleName:(NSString *)styleName styleValue:(id)styleValue{
+    [[VKCssClassManager singleton]addCssClassName:className sytleName:styleName styleValue:styleValue];
 }
 
--(void)addCssClassName:(NSString *)className SytleName:(NSString *)styleName styleValue:(id)styleValue{
+-(void)addCssClassName:(NSString *)className sytleName:(NSString *)styleName styleValue:(id)styleValue{
     
     VKCssClassModal *cssclass = [self.cssClassDic objectForKey:className];
     if (!cssclass) {
@@ -50,51 +38,51 @@ VK_DEF_SINGLETON
 }
 
 
-+(void)defineCssClass:(NSString *)className StyleInfo:(NSArray *)info
++(void)defineCssClass:(NSString *)className styleInfo:(NSArray *)info
 {
     if ([info.firstObject isKindOfClass:[NSString class]]) {
-        [VKCssClassManager defineCssClass:className StyleArr:info];
+        [VKCssClassManager defineCssClass:className styleStrArr:info];
     }else if ([info.firstObject isKindOfClass:[NSDictionary class]]){
-        [VKCssClassManager defineCssClass:className StyleDicArr:info];
+        [VKCssClassManager defineCssClass:className styleDicArr:info];
     }
 }
 
-+(void)defineCssClass:(NSString *)className StyleArr:(NSArray *)styleArr
++(void)defineCssClass:(NSString *)className styleStrArr:(NSArray *)styleArr
 {
     for (NSString *style in styleArr) {
         if ([style rangeOfString:@":"].location != NSNotFound) {
             NSArray *styleItem = [style componentsSeparatedByString:@":"];
             NSString *styleName = styleItem.firstObject;
             NSString *styleValue = styleItem.lastObject;
-            [VKCssClassManager addCssClassName:className SytleName:styleName styleValue:styleValue];
+            [VKCssClassManager addCssClassName:className sytleName:styleName styleValue:styleValue];
         }else if(style.length > 0){
             NSLog(@"style string is incorrect");
         }
     }
 }
 
-+(void)defineCssClass:(NSString *)className StyleDicArr:(NSArray *)styleDicArr
++(void)defineCssClass:(NSString *)className styleDicArr:(NSArray *)styleDicArr
 {
     for (NSDictionary *styleDic in styleDicArr) {
         for (NSString *stylekey in styleDic.allKeys) {
             id stylevalue = [styleDic objectForKey:stylekey];
-            [VKCssClassManager addCssClassName:className SytleName:stylekey styleValue:stylevalue];
+            [VKCssClassManager addCssClassName:className sytleName:stylekey styleValue:stylevalue];
         }
     }
     
 }
 
-+(void)setCssClass:(id)target ClassName:(NSString *)className{
-    [[VKCssClassManager singleton]setCssClass:target ClassName:className];
++(void)setCssClass:(id)target className:(NSString *)className{
+    [[VKCssClassManager singleton]setCssClass:target className:className];
 }
 
--(void)setCssClass:(id)target ClassName:(NSString *)className{
+-(void)setCssClass:(id)target className:(NSString *)className{
     VKCssClassModal *cssclass = [self.cssClassDic objectForKey:className];
     if (cssclass) {
         NSArray *styleKeyArr = cssclass.styleDic.allKeys;
         for (NSString *styleName in styleKeyArr) {
             id stylevalue = [cssclass.styleDic objectForKey:styleName];
-            [VKCssStyleManager setCssStyle:target StyleName:styleName StyleValue:stylevalue];
+            [VKCssStyleManager setCssStyle:target styleName:styleName styleValue:stylevalue];
         }
         
     }

@@ -9,13 +9,14 @@
 #import "VKFontSizeStyle.h"
 
 @implementation VKFontSizeStyle
+
 VK_REGISTE_ATTRIBUTE()
 
-+(NSString *)styleName{
++ (NSString *)styleName{
     return @"font-size";
 }
 
-+(void)setTarget:(id)target styleValue:(id)value{
++ (void)setTarget:(id)target styleValue:(id)value{
     CGFloat fontsize = 0;
     if ([value isKindOfClass:[NSString class]]) {
         NSString *valuestr = (NSString *)value;

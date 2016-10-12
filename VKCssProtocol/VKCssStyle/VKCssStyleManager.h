@@ -14,15 +14,14 @@
 + (void)load { [VKCssStyleManager registerCssStyle:self]; } \
 
 @interface VKCssStyleManager : NSObject
+
 VK_AS_SINGLETON
-
-
 
 @property (nonatomic,strong) NSMutableDictionary<NSString *,Class> *styleClasses;
 
-+(void)registerCssStyle:(Class)style;
++ (void)registerCssStyle:(Class)style;
 
-+(void)setCssStyle:(id)target StyleName:(NSString *)styleName StyleValue:(NSString *)styleValue;
++ (void)setCssStyle:(id)target styleName:(NSString *)styleName styleValue:(NSString *)styleValue;
 
 
 @end

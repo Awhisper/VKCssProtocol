@@ -16,7 +16,7 @@
     NSArray *styleArr = [cssClass componentsSeparatedByString:@" "];
     for (NSString *classstr in styleArr) {
         if(classstr.length > 0){
-            [VKCssClassManager setCssClass:self ClassName:classstr];
+            [VKCssClassManager setCssClass:self className:classstr];
         }
         
     }
@@ -36,7 +36,7 @@
             NSArray *styleItem = [stylestr componentsSeparatedByString:@":"];
             NSString *styleName = styleItem.firstObject;
             NSString *styleValue = styleItem.lastObject;
-            [VKCssStyleManager setCssStyle:self StyleName:styleName StyleValue:styleValue];
+            [VKCssStyleManager setCssStyle:self styleName:styleName styleValue:styleValue];
         }else if(stylestr.length > 0){
             NSLog(@"style string is incorrect");
         }

@@ -17,10 +17,10 @@
 		6CED74791DAE55ED0021109E /* UIView+VKCssProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74661DAE55ED0021109E /* UIView+VKCssProtocol.m */; };
 		6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74691DAE55ED0021109E /* VKCssClassManager.m */; };
 		6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED746B1DAE55ED0021109E /* VKCssClassModal.m */; };
-		6CED747C1DAE55ED0021109E /* VKBackgroundcolorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED746F1DAE55ED0021109E /* VKBackgroundcolorStyle.m */; };
-		6CED747D1DAE55ED0021109E /* VKCssStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74711DAE55ED0021109E /* VKCssStyleManager.m */; };
-		6CED747E1DAE55ED0021109E /* VKFontColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74751DAE55ED0021109E /* VKFontColorStyle.m */; };
-		6CED747F1DAE55ED0021109E /* VKFontSizeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74771DAE55ED0021109E /* VKFontSizeStyle.m */; };
+		6CED749B1DAE589B0021109E /* VKCssStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74911DAE589B0021109E /* VKCssStyleManager.m */; };
+		6CED749C1DAE589B0021109E /* VKBackgroundcolorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74961DAE589B0021109E /* VKBackgroundcolorStyle.m */; };
+		6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74981DAE589B0021109E /* VKFontColorStyle.m */; };
+		6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,16 +44,16 @@
 		6CED746A1DAE55ED0021109E /* VKCssClassModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssClassModal.h; sourceTree = "<group>"; };
 		6CED746B1DAE55ED0021109E /* VKCssClassModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssClassModal.m; sourceTree = "<group>"; };
 		6CED746C1DAE55ED0021109E /* VKCssProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssProtocol.h; sourceTree = "<group>"; };
-		6CED746E1DAE55ED0021109E /* VKBackgroundcolorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBackgroundcolorStyle.h; sourceTree = "<group>"; };
-		6CED746F1DAE55ED0021109E /* VKBackgroundcolorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBackgroundcolorStyle.m; sourceTree = "<group>"; };
-		6CED74701DAE55ED0021109E /* VKCssStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStyleManager.h; sourceTree = "<group>"; };
-		6CED74711DAE55ED0021109E /* VKCssStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssStyleManager.m; sourceTree = "<group>"; };
-		6CED74721DAE55ED0021109E /* VKCssStylePch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStylePch.h; sourceTree = "<group>"; };
-		6CED74731DAE55ED0021109E /* VKCssStyleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStyleProtocol.h; sourceTree = "<group>"; };
-		6CED74741DAE55ED0021109E /* VKFontColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontColorStyle.h; sourceTree = "<group>"; };
-		6CED74751DAE55ED0021109E /* VKFontColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontColorStyle.m; sourceTree = "<group>"; };
-		6CED74761DAE55ED0021109E /* VKFontSizeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontSizeStyle.h; sourceTree = "<group>"; };
-		6CED74771DAE55ED0021109E /* VKFontSizeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontSizeStyle.m; sourceTree = "<group>"; };
+		6CED74901DAE589B0021109E /* VKCssStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStyleManager.h; sourceTree = "<group>"; };
+		6CED74911DAE589B0021109E /* VKCssStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssStyleManager.m; sourceTree = "<group>"; };
+		6CED74921DAE589B0021109E /* VKCssStylePch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStylePch.h; sourceTree = "<group>"; };
+		6CED74931DAE589B0021109E /* VKCssStyleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCssStyleProtocol.h; sourceTree = "<group>"; };
+		6CED74951DAE589B0021109E /* VKBackgroundcolorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBackgroundcolorStyle.h; sourceTree = "<group>"; };
+		6CED74961DAE589B0021109E /* VKBackgroundcolorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBackgroundcolorStyle.m; sourceTree = "<group>"; };
+		6CED74971DAE589B0021109E /* VKFontColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontColorStyle.h; sourceTree = "<group>"; };
+		6CED74981DAE589B0021109E /* VKFontColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontColorStyle.m; sourceTree = "<group>"; };
+		6CED74991DAE589B0021109E /* VKFontSizeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontSizeStyle.h; sourceTree = "<group>"; };
+		6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontSizeStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +111,10 @@
 		6CED74601DAE55ED0021109E /* VKCssProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				6CED74611DAE55ED0021109E /* VKCategory */,
+				6CED748F1DAE589B0021109E /* VKCssStyle */,
 				6CED74671DAE55ED0021109E /* VKCssClass */,
+				6CED74611DAE55ED0021109E /* VKCategory */,
 				6CED746C1DAE55ED0021109E /* VKCssProtocol.h */,
-				6CED746D1DAE55ED0021109E /* VKCssStyle */,
 			);
 			name = VKCssProtocol;
 			path = ../VKCssProtocol;
@@ -143,21 +143,29 @@
 			path = VKCssClass;
 			sourceTree = "<group>";
 		};
-		6CED746D1DAE55ED0021109E /* VKCssStyle */ = {
+		6CED748F1DAE589B0021109E /* VKCssStyle */ = {
 			isa = PBXGroup;
 			children = (
-				6CED746E1DAE55ED0021109E /* VKBackgroundcolorStyle.h */,
-				6CED746F1DAE55ED0021109E /* VKBackgroundcolorStyle.m */,
-				6CED74701DAE55ED0021109E /* VKCssStyleManager.h */,
-				6CED74711DAE55ED0021109E /* VKCssStyleManager.m */,
-				6CED74721DAE55ED0021109E /* VKCssStylePch.h */,
-				6CED74731DAE55ED0021109E /* VKCssStyleProtocol.h */,
-				6CED74741DAE55ED0021109E /* VKFontColorStyle.h */,
-				6CED74751DAE55ED0021109E /* VKFontColorStyle.m */,
-				6CED74761DAE55ED0021109E /* VKFontSizeStyle.h */,
-				6CED74771DAE55ED0021109E /* VKFontSizeStyle.m */,
+				6CED74901DAE589B0021109E /* VKCssStyleManager.h */,
+				6CED74911DAE589B0021109E /* VKCssStyleManager.m */,
+				6CED74921DAE589B0021109E /* VKCssStylePch.h */,
+				6CED74931DAE589B0021109E /* VKCssStyleProtocol.h */,
+				6CED74941DAE589B0021109E /* VKStyles */,
 			);
 			path = VKCssStyle;
+			sourceTree = "<group>";
+		};
+		6CED74941DAE589B0021109E /* VKStyles */ = {
+			isa = PBXGroup;
+			children = (
+				6CED74951DAE589B0021109E /* VKBackgroundcolorStyle.h */,
+				6CED74961DAE589B0021109E /* VKBackgroundcolorStyle.m */,
+				6CED74971DAE589B0021109E /* VKFontColorStyle.h */,
+				6CED74981DAE589B0021109E /* VKFontColorStyle.m */,
+				6CED74991DAE589B0021109E /* VKFontSizeStyle.h */,
+				6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */,
+			);
+			path = VKStyles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,14 +241,14 @@
 			files = (
 				6CED74791DAE55ED0021109E /* UIView+VKCssProtocol.m in Sources */,
 				6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */,
-				6CED747D1DAE55ED0021109E /* VKCssStyleManager.m in Sources */,
 				6CED74511DAE550E0021109E /* ViewController.m in Sources */,
 				6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */,
-				6CED747E1DAE55ED0021109E /* VKFontColorStyle.m in Sources */,
-				6CED747C1DAE55ED0021109E /* VKBackgroundcolorStyle.m in Sources */,
+				6CED749B1DAE589B0021109E /* VKCssStyleManager.m in Sources */,
+				6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */,
+				6CED749C1DAE589B0021109E /* VKBackgroundcolorStyle.m in Sources */,
 				6CED744B1DAE550E0021109E /* main.m in Sources */,
 				6CED74781DAE55ED0021109E /* UIColor+VKUtlities.m in Sources */,
-				6CED747F1DAE55ED0021109E /* VKFontSizeStyle.m in Sources */,
+				6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */,
 				6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

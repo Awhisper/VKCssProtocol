@@ -48,5 +48,5 @@
 + (UIColor *) vk_colorWithHexString:(NSString *)hexStr alpha:(CGFloat)alpha;
 
 
-+(UIColor *)vk_convertStringToColor:(NSString *)colorstr;
++ (UIColor *) vk_convertStringToColor:(NSString *)colorstr;
 @end

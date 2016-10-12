@@ -9,6 +9,7 @@
 #import "VKCssStyleManager.h"
 
 @implementation VKCssStyleManager
+
 VK_DEF_SINGLETON
 
 +(void)registerCssStyle:(Class)style{
@@ -45,12 +46,12 @@ VK_DEF_SINGLETON
     return YES;
 }
 
-+(void)setCssStyle:(id)target StyleName:(NSString *)styleName StyleValue:(NSString *)styleValue
++(void)setCssStyle:(id)target styleName:(NSString *)styleName styleValue:(NSString *)styleValue
 {
-    [[VKCssStyleManager singleton]setCssStyle:target StyleName:styleName StyleValue:styleValue];
+    [[VKCssStyleManager singleton] setCssStyle:target styleName:styleName styleValue:styleValue];
 }
 
--(void)setCssStyle:(id)target StyleName:(NSString *)styleName StyleValue:(NSString *)styleValue
+-(void)setCssStyle:(id)target styleName:(NSString *)styleName styleValue:(NSString *)styleValue
 {
     Class<VKCssStyleProtocol> targetStyle = [self.styleClasses objectForKey:styleName];
     if (targetStyle) {
