@@ -88,4 +88,9 @@ VK_DEF_SINGLETON
     }
 
 }
+
++(void)readBundleCssFile:(NSString *)cssFile
+{
+    
+}
 @end

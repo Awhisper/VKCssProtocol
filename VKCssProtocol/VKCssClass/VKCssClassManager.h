@@ -29,6 +29,7 @@ VK_AS_SINGLETON
 
 + (void)setCssClass:(id)target className:(NSString *)className;
 
++ (void)readBundleCssFile:(NSString *)cssFile;
 @end
 
 

@@ -17,7 +17,6 @@
 
 -(void)initCss{
     
-    
     @defCssClass(defName(@"标准工具栏样式"),
                  defStyles(@"background-color:yellow"));
     
