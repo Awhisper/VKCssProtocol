@@ -91,6 +91,50 @@ VK_DEF_SINGLETON
 
 +(void)readBundleCssFile:(NSString *)cssFile
 {
+    NSString *cssFilePath = [[NSBundle mainBundle] pathForResource:cssFile ofType:@"css"];
+
     
+    NSString *css = [NSString stringWithContentsOfFile:cssFilePath encoding:NSUTF8StringEncoding error:nil];
+    
+    [VKCssClassManager parseCssContent:css];
+}
+
++(void)parseCssContent:(NSString *)cssContent
+{
+    NSScanner *theScanner = [NSScanner scannerWithString:cssContent];
+    
+    [theScanner setCaseSensitive: YES];
+    [theScanner setScanLocation: 0];
+    while (![theScanner isAtEnd]) {
+        
+        [theScanner scanUpToString:@"." intoString:nil];
+        NSInteger cssClassNameStart = theScanner.scanLocation;
+        
+        [theScanner scanUpToString:@"{" intoString:nil];
+        NSInteger cssdefineStart = theScanner.scanLocation;
+        
+        [theScanner scanUpToString:@"}" intoString:nil];
+        NSInteger cssdefineEnd = theScanner.scanLocation;
+        
+        NSLog(@"1");
+    }
+    
+    
+    
+    
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\..*\\{[\\s\\S]*\\}" options:NSRegularExpressionCaseInsensitive error:&error];
+    NSTextCheckingResult *result = [regex firstMatchInString:cssContent options:0 range:NSMakeRange(0, [cssContent length])];
+    
+    [regex enumerateMatchesInString:cssContent options:NSMatchingReportProgress range:NSMakeRange(0, cssContent.length) usingBlock:^(NSTextCheckingResult * _Nullable result, NSMatchingFlags flags, BOOL * _Nonnull stop) {
+        
+        NSString *cssitemstr = [cssContent substringWithRange:result.range];
+        NSLog(@"%@",cssitemstr);
+    }];
+    if (result) {
+        NSLog(@"%@", [cssContent substringWithRange:result.range]);
+    }
+    
+    NSLog(@"11");
 }
 @end

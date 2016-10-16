@@ -21,6 +21,7 @@
 		6CED749C1DAE589B0021109E /* VKBackgroundcolorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74961DAE589B0021109E /* VKBackgroundcolorStyle.m */; };
 		6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74981DAE589B0021109E /* VKFontColorStyle.m */; };
 		6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */; };
+		6CF2D63B1DB3198E00489671 /* cssClass.css in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2D63A1DB3198E00489671 /* cssClass.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		6CED74981DAE589B0021109E /* VKFontColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontColorStyle.m; sourceTree = "<group>"; };
 		6CED74991DAE589B0021109E /* VKFontSizeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontSizeStyle.h; sourceTree = "<group>"; };
 		6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontSizeStyle.m; sourceTree = "<group>"; };
+		6CF2D63A1DB3198E00489671 /* cssClass.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cssClass.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		6CED74481DAE550E0021109E /* VKCssProtocolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6CF2D63A1DB3198E00489671 /* cssClass.css */,
 				6CED744C1DAE550E0021109E /* AppDelegate.h */,
 				6CED744D1DAE550E0021109E /* AppDelegate.m */,
 				6CED744F1DAE550E0021109E /* ViewController.h */,
@@ -228,6 +231,7 @@
 			files = (
 				6CED74591DAE550E0021109E /* LaunchScreen.storyboard in Resources */,
 				6CED74561DAE550E0021109E /* Assets.xcassets in Resources */,
+				6CF2D63B1DB3198E00489671 /* cssClass.css in Resources */,
 				6CED74541DAE550E0021109E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +410,7 @@
 				6CED745F1DAE550E0021109E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

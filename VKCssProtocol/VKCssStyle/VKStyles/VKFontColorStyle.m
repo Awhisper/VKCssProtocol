@@ -14,7 +14,7 @@
 VK_REGISTE_ATTRIBUTE()
 
 + (NSString *)styleName{
-    return @"font-color";
+    return @"color";
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{

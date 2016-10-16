@@ -17,6 +17,8 @@
 #define defCssClass(name,info) \
 autoreleasepool{ [VKCssClassManager defineCssClass:name styleInfo:info];}; \
 
+#define loadCssFile(bundlefile) \
+autoreleasepool{ [VKCssClassManager readBundleCssFile:bundlefile];}; \
 
 @interface VKCssClassManager : NSObject
 

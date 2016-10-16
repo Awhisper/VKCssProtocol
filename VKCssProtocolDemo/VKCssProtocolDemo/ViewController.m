@@ -21,10 +21,10 @@
                  defStyles(@"background-color:yellow"));
     
     @defCssClass(defName(@"标准配字"),
-                 defStyles(defStyle(@"font-color",@"black"),
+                 defStyles(defStyle(@"color",@"black"),
                            defStyle(@"font-size",@"30")));
     
-    
+    @loadCssFile(@"cssClass");
 }
 
 - (void)viewDidLoad {
