@@ -33,7 +33,7 @@
     
     UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
     [btabc setTitle:@"aaaa" forState:UIControlStateNormal];
-    btabc.cssClass = @"标准工具栏样式 标准配字";
+    btabc.cssClass = @"commenBar commenText";
     [self.view addSubview:btabc];
 }
 

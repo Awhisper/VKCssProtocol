@@ -105,34 +105,36 @@ VK_DEF_SINGLETON
     
     [theScanner setCaseSensitive: YES];
     [theScanner setScanLocation: 0];
+    
+    
     while (![theScanner isAtEnd]) {
         
         [theScanner scanUpToString:@"." intoString:nil];
-        NSInteger cssClassNameStart = theScanner.scanLocation;
+        NSInteger cssClassNameStart = theScanner.scanLocation + 1;
         
         [theScanner scanUpToString:@"{" intoString:nil];
-        NSInteger cssdefineStart = theScanner.scanLocation;
+        NSInteger cssdefineStart = theScanner.scanLocation + 1;
+        NSString *cssName = [cssContent substringWithRange:NSMakeRange(cssClassNameStart, cssdefineStart - cssClassNameStart - 1)];
         
         [theScanner scanUpToString:@"}" intoString:nil];
-        NSInteger cssdefineEnd = theScanner.scanLocation;
+        NSInteger cssdefineEnd = theScanner.scanLocation + 1;
         
-        NSLog(@"1");
-    }
-    
-    
-    
-    
-    NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\..*\\{[\\s\\S]*\\}" options:NSRegularExpressionCaseInsensitive error:&error];
-    NSTextCheckingResult *result = [regex firstMatchInString:cssContent options:0 range:NSMakeRange(0, [cssContent length])];
-    
-    [regex enumerateMatchesInString:cssContent options:NSMatchingReportProgress range:NSMakeRange(0, cssContent.length) usingBlock:^(NSTextCheckingResult * _Nullable result, NSMatchingFlags flags, BOOL * _Nonnull stop) {
+        NSString *cssDef = [cssContent substringWithRange:NSMakeRange(cssdefineStart, cssdefineEnd - cssdefineStart - 1)];
         
-        NSString *cssitemstr = [cssContent substringWithRange:result.range];
-        NSLog(@"%@",cssitemstr);
-    }];
-    if (result) {
-        NSLog(@"%@", [cssContent substringWithRange:result.range]);
+        cssName = [cssName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSArray *cssStyles = [cssDef componentsSeparatedByString:@";"];
+        for (NSString *cssstyle in cssStyles) {
+            NSString *style = [cssstyle stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            if ([style rangeOfString:@":"].location != NSNotFound) {
+                NSArray *styleItem = [style componentsSeparatedByString:@":"];
+                NSString *styleName = [styleItem.firstObject stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                NSString *styleValue = [styleItem.lastObject stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                [VKCssClassManager addCssClassName:cssName sytleName:styleName styleValue:styleValue];
+            }else if(style.length > 0){
+                NSLog(@"style string is incorrect");
+            }
+            
+        }
     }
     
     NSLog(@"11");
