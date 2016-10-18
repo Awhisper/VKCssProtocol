@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C0B3A051DB65BE8003D953A /* VKBorderColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */; };
+		6C0B3A081DB65E19003D953A /* VKBorderWidthStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B3A071DB65E19003D953A /* VKBorderWidthStyle.m */; };
 		6CED744B1DAE550E0021109E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744A1DAE550E0021109E /* main.m */; };
 		6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744D1DAE550E0021109E /* AppDelegate.m */; };
 		6CED74511DAE550E0021109E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74501DAE550E0021109E /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		6C0B3A031DB65BE8003D953A /* VKBorderColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderColorStyle.h; sourceTree = "<group>"; };
 		6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderColorStyle.m; sourceTree = "<group>"; };
+		6C0B3A061DB65E19003D953A /* VKBorderWidthStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderWidthStyle.h; sourceTree = "<group>"; };
+		6C0B3A071DB65E19003D953A /* VKBorderWidthStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderWidthStyle.m; sourceTree = "<group>"; };
 		6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCssProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CED744A1DAE550E0021109E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CED744C1DAE550E0021109E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */,
 				6C0B3A031DB65BE8003D953A /* VKBorderColorStyle.h */,
 				6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */,
+				6C0B3A061DB65E19003D953A /* VKBorderWidthStyle.h */,
+				6C0B3A071DB65E19003D953A /* VKBorderWidthStyle.m */,
 			);
 			path = VKStyles;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CED74791DAE55ED0021109E /* UIView+VKCssProtocol.m in Sources */,
+				6C0B3A081DB65E19003D953A /* VKBorderWidthStyle.m in Sources */,
 				6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */,
 				6CED74511DAE550E0021109E /* ViewController.m in Sources */,
 				6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */,

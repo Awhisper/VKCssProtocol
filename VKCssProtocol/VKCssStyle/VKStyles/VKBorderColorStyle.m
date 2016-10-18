@@ -21,22 +21,23 @@ VK_REGISTE_ATTRIBUTE()
 + (void)setTarget:(id)target styleValue:(id)value{
     if ([value isKindOfClass:[UIColor class]]) {
         if ([target respondsToSelector:@selector(setBackgroundColor:)]) {
-            [(UIView *)target setBackgroundColor:value];
+            [self setTarget:target borderColor:value];
             return;
         }
     }
     
     if ([value isKindOfClass:[NSString class]]) {
         UIColor *color = [UIColor vk_convertStringToColor:value];
-        [(UIView *)target setBackgroundColor:color];
+        [self setTarget:target borderColor:color];
         return;
     }
 }
 
-+(void)setTarget:(id)target BorderColor:(UIColor *)color{
++(void)setTarget:(id)target borderColor:(UIColor *)color{
     if ([target isKindOfClass:[UIView class]]) {
         UIView *view = (UIView *)target;
         view.layer.borderColor = color.CGColor;
+        
     }
 }
 
