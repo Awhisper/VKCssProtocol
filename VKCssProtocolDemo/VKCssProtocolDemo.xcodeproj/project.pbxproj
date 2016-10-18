@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0B3A051DB65BE8003D953A /* VKBorderColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */; };
 		6CED744B1DAE550E0021109E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744A1DAE550E0021109E /* main.m */; };
 		6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744D1DAE550E0021109E /* AppDelegate.m */; };
 		6CED74511DAE550E0021109E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74501DAE550E0021109E /* ViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0B3A031DB65BE8003D953A /* VKBorderColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderColorStyle.h; sourceTree = "<group>"; };
+		6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderColorStyle.m; sourceTree = "<group>"; };
 		6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCssProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CED744A1DAE550E0021109E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CED744C1DAE550E0021109E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				6CED74981DAE589B0021109E /* VKFontColorStyle.m */,
 				6CED74991DAE589B0021109E /* VKFontSizeStyle.h */,
 				6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */,
+				6C0B3A031DB65BE8003D953A /* VKBorderColorStyle.h */,
+				6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */,
 			);
 			path = VKStyles;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */,
 				6CED749C1DAE589B0021109E /* VKBackgroundcolorStyle.m in Sources */,
 				6CED744B1DAE550E0021109E /* main.m in Sources */,
+				6C0B3A051DB65BE8003D953A /* VKBorderColorStyle.m in Sources */,
 				6CED74781DAE55ED0021109E /* UIColor+VKUtlities.m in Sources */,
 				6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */,
 				6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */,
