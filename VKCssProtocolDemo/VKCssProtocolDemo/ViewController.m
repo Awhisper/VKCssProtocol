@@ -35,6 +35,12 @@
     [btabc setTitle:@"aaaa" forState:UIControlStateNormal];
     btabc.cssClass = @"commenBar commenText";
     [self.view addSubview:btabc];
+    
+    UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];
+    lbabc.text = @"bbb";
+    lbabc.cssClass = @"commenBar commenText";
+
+    [self.view addSubview:lbabc];
 }
 
 

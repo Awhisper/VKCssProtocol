@@ -2,12 +2,13 @@ a
 .commenBar{
     background-color:yellow;
     border-color:red;
-    border-width:0.5;
+    border-width:0.5 px;
 }
 
 
 
 .commenText{
     color:black ;
-    font-size: 16
+    font-size: 30 px ;
+    text-align : center;
 }
