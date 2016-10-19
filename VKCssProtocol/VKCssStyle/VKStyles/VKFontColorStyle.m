@@ -18,21 +18,11 @@ VK_REGISTE_ATTRIBUTE()
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{
-    UIColor *fontColor;
-    if ([value isKindOfClass:[UIColor class]]) {
-        fontColor = value;
-    }
-    
-    if ([value isKindOfClass:[NSString class]]) {
-        fontColor = [UIColor vk_convertStringToColor:value];
-    }
-    
+    UIColor *fontColor = [value VKIdToColor];
     
     if (!fontColor) {
         return;
     }
-    
-    
     
     if ([target isKindOfClass:[UILabel class]]) {
         UILabel *targetLb = target;

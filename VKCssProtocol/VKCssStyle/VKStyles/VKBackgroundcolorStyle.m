@@ -7,7 +7,6 @@
 //
 
 #import "VKBackgroundcolorStyle.h"
-#import "UIColor+VKUtlities.h"
 
 @implementation VKBackgroundcolorStyle
 
@@ -18,17 +17,9 @@ VK_REGISTE_ATTRIBUTE()
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{
-    if ([value isKindOfClass:[UIColor class]]) {
-        if ([target respondsToSelector:@selector(setBackgroundColor:)]) {
-            [(UIView *)target setBackgroundColor:value];
-            return;
-        }
-    }
-    
-    if ([value isKindOfClass:[NSString class]]) {
-        UIColor *color = [UIColor vk_convertStringToColor:value];
+    UIColor *color = [value VKIdToColor];
+    if ([target isKindOfClass:[UIView class]]) {
         [(UIView *)target setBackgroundColor:color];
-        return;
     }
 }
 

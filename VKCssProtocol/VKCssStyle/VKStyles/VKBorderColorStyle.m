@@ -19,18 +19,8 @@ VK_REGISTE_ATTRIBUTE()
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{
-    if ([value isKindOfClass:[UIColor class]]) {
-        if ([target respondsToSelector:@selector(setBackgroundColor:)]) {
-            [self setTarget:target borderColor:value];
-            return;
-        }
-    }
-    
-    if ([value isKindOfClass:[NSString class]]) {
-        UIColor *color = [UIColor vk_convertStringToColor:value];
-        [self setTarget:target borderColor:color];
-        return;
-    }
+    UIColor *color = [value VKIdToColor];
+    [self setTarget:target borderColor:color];
 }
 
 +(void)setTarget:(id)target borderColor:(UIColor *)color{

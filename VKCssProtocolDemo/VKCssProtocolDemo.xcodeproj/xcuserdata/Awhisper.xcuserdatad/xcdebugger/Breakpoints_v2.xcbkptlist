@@ -147,38 +147,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../VKCssProtocol/VKCssStyle/VKStyles/VKBackgroundcolorStyle.m"
-            timestampString = "498490664.156853"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "+setTarget:styleValue:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../VKCssProtocol/VKCssStyle/VKStyles/VKBackgroundcolorStyle.m"
-            timestampString = "498490665.144972"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "+setTarget:styleValue:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssStyle/VKCssStyleManager.m"
             timestampString = "498490701.749057"
             startingColumnNumber = "9223372036854775807"
@@ -218,6 +186,22 @@
             startingLineNumber = "57"
             endingLineNumber = "57"
             landmarkName = "-setCssStyle:styleName:styleValue:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../VKCssProtocol/VKCssStyle/VKStyles/VKBackgroundcolorStyle.m"
+            timestampString = "498574212.802901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "+setTarget:styleValue:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

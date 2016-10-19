@@ -17,16 +17,7 @@ VK_REGISTE_ATTRIBUTE()
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{
-    CGFloat fontsize = 0;
-    if ([value isKindOfClass:[NSString class]]) {
-        NSString *valuestr = (NSString *)value;
-        fontsize = [valuestr floatValue];
-    }
-    
-    if ([value isKindOfClass:[NSNumber class]]) {
-        NSNumber *valuenum = (NSNumber *)value;
-        fontsize = [valuenum floatValue];
-    }
+    CGFloat fontsize = [value VKIdToCGFloat];
     
     if (fontsize <= 0) {
         return;

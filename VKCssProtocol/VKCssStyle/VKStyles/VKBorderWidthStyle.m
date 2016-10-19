@@ -17,16 +17,7 @@ VK_REGISTE_ATTRIBUTE()
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{
-    CGFloat width = 0;
-    if ([value isKindOfClass:[NSString class]]) {
-        NSString *valuestr = (NSString *)value;
-        width = [valuestr floatValue];
-    }
-    
-    if ([value isKindOfClass:[NSNumber class]]) {
-        NSNumber *valuenum = (NSNumber *)value;
-        width = [valuenum floatValue];
-    }
+    CGFloat width = [value VKIdToCGFloat];
     
     if (width <= 0) {
         return;

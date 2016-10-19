@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NSObject+VKIdHelper.h"
 @protocol VKCssStyleProtocol <NSObject>
 
 + (NSString *)styleName;
