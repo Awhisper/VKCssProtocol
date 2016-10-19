@@ -31,6 +31,7 @@
 		6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderColorStyle.m; sourceTree = "<group>"; };
 		6C0B3A061DB65E19003D953A /* VKBorderWidthStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderWidthStyle.h; sourceTree = "<group>"; };
 		6C0B3A071DB65E19003D953A /* VKBorderWidthStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderWidthStyle.m; sourceTree = "<group>"; };
+		6CB567E41DB7A04D004D8AFA /* VKCssStyleConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKCssStyleConstants.h; sourceTree = "<group>"; };
 		6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCssProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CED744A1DAE550E0021109E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CED744C1DAE550E0021109E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		6CED748F1DAE589B0021109E /* VKCssStyle */ = {
 			isa = PBXGroup;
 			children = (
+				6CB567E41DB7A04D004D8AFA /* VKCssStyleConstants.h */,
 				6CED74901DAE589B0021109E /* VKCssStyleManager.h */,
 				6CED74911DAE589B0021109E /* VKCssStyleManager.m */,
 				6CED74921DAE589B0021109E /* VKCssStylePch.h */,
