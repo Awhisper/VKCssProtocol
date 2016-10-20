@@ -16,9 +16,13 @@
 @implementation ViewController
 
 -(void)initCss{
+    //playground调试
+    //JS测试包的本地绝对路径
+    NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];;
     
+    NSString *scriptPath = [NSString stringWithFormat:@"%@%@", rootPath, @"/cssClass.css"];
     
-    
+    [VKCssHotReloader startHotReloaderWithCssPath:scriptPath];
 //    @defCssClass(defName(@"标准工具栏样式"),
 //                 defStyles(@"background-color:yellow"));
 //    
@@ -52,5 +56,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc{
+    [VKCssHotReloader endHotReloader];
+}
 
 @end

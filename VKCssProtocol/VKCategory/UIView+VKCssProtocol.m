@@ -22,6 +22,7 @@
     }
     
     objc_setAssociatedObject(self, @selector(cssClass), cssClass, OBJC_ASSOCIATION_RETAIN);
+    [self tryAddHotReloaderListener];
 }
 
 -(NSString *)cssClass{
@@ -44,10 +45,27 @@
     }
     
     objc_setAssociatedObject(self, @selector(cssStyle), cssStyle, OBJC_ASSOCIATION_RETAIN);
+    [self tryAddHotReloaderListener];
 }
 
 -(NSString *)cssStyle{
     return objc_getAssociatedObject(self, _cmd);;
 }
 
+-(void)tryAddHotReloaderListener{
+    NSString *reloaderClassName = @"VKCssHotReloader";
+    Class reloaderClass = NSClassFromString(reloaderClassName);
+    if (reloaderClass) {
+        [(id)reloaderClass performSelector:@selector(addHotReloaderTarger:) withObject:self];
+    }
+}
+
+
+-(void)refreshCSS
+{
+    NSString *oldStyle = self.cssStyle;
+    NSString *oldClass = self.cssClass;
+    self.cssClass = oldClass;
+    self.cssStyle = oldStyle;
+}
 @end

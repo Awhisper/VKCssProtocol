@@ -9,7 +9,12 @@
 #import "VKCssHotReloader.h"
 #import "SGDirWatchdog.h"
 #import "VKCssClassManager.h"
+#import "UIView+VKCssProtocol.h"
 @interface VKCssHotReloader ()
+
+@property (nonatomic,assign) BOOL isHotReload;
+
+@property (nonatomic,strong) NSMutableArray<UIView *> *viewListenArr;
 
 @property (nonatomic,strong) NSString *rootPath;
 
@@ -25,25 +30,32 @@ VK_DEF_SINGLETON
     self = [super init];
     if (self) {
         self.watchDogs = [[NSMutableArray alloc]init];
+        self.viewListenArr = [[NSMutableArray alloc]init];
     }
     return self;
 }
 
 +(void)startHotReloaderWithCssPath:(NSString *)path{
-    //playground调试
-    //JS测试包的本地绝对路径
-    NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];;
+    [VKCssClassManager readCssFilePath:path];
     
-    NSString *scriptPath = [NSString stringWithFormat:@"%@%@", rootPath, @"/cssClass.css"];
+    [[VKCssHotReloader singleton]startCSSPath:path];
     
-    [VKCssClassManager readCssFilePath:scriptPath];
-    
-    [[VKCssHotReloader singleton]startCSSPath:scriptPath];
+    [VKCssHotReloader singleton].isHotReload = YES;
 }
 
 +(void)endHotReloader{
+    [VKCssHotReloader singleton].isHotReload = NO;
+    [[VKCssHotReloader singleton].viewListenArr removeAllObjects];
     [[VKCssHotReloader singleton] watchJSFile:NO];
 }
+
++(void)addHotReloaderTarger:(UIView *)target{
+    if ([VKCssHotReloader singleton].isHotReload) {
+        [[VKCssHotReloader singleton].viewListenArr addObject:target];
+    }
+    
+}
+
 
 -(void)startCSSPath:(NSString *)cssPath
 {
@@ -61,7 +73,8 @@ VK_DEF_SINGLETON
 {
 #if TARGET_IPHONE_SIMULATOR
     SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:path update:^{
-//        [VKCssClassManager reloadCssFile];
+        [VKCssClassManager reloadCssFile];
+        [[VKCssHotReloader singleton] refreshListeningUI];
         NSLog(@"change======");
     }];
     [self.watchDogs addObject:watchDog];
@@ -69,6 +82,12 @@ VK_DEF_SINGLETON
 #endif
 }
 
+-(void)refreshListeningUI
+{
+    for (UIView *view in [self.viewListenArr copy]) {
+        [view refreshCSS];
+    }
+}
 
 -(void)watchJSFile:(BOOL)watch
 {

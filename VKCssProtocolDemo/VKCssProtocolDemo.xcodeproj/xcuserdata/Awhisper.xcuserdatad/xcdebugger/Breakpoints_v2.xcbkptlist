@@ -292,12 +292,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498659365.338728"
+            timestampString = "498660753.968294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-watchFolder:mainScriptPath:"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-watchFolder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -308,11 +308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498659365.338728"
+            timestampString = "498660753.968294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-startCSSPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -324,12 +324,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498659365.338728"
+            timestampString = "498660753.968294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-watchFolder:mainScriptPath:"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "-watchFolder:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -372,11 +372,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498659365.338728"
+            timestampString = "498660753.968294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "-watchJSFile:"
             landmarkType = "7">
             <Locations>
@@ -420,13 +420,151 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498659365.338728"
+            timestampString = "498660753.968294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-watchFolder:mainScriptPath:"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-watchFolder:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../VKCssProtocol/VKCssClass/VKCssClassManager.m"
+            timestampString = "498660782.097473"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "+reloadCssFile"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[VKCssClassManager reloadCssFile]"
+                  moduleName = "VKCssProtocolDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Awhisper/Desktop/Github/VKCssProtocol/VKCssProtocol/VKCssClass/VKCssClassManager.m"
+                  timestampString = "498660782.312341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[VKCssClassManager reloadCssFile]"
+                  moduleName = "VKCssProtocolDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Awhisper/Desktop/Github/VKCssProtocol/VKCssProtocol/VKCssClass/VKCssClassManager.m"
+                  timestampString = "498660782.314026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "182">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
+            timestampString = "498660807.584249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-refreshListeningUI"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VKCssHotReloader refreshListeningUI]"
+                  moduleName = "VKCssProtocolDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Awhisper/Desktop/Github/VKCssProtocol/VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
+                  timestampString = "498660836.326571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VKCssHotReloader refreshListeningUI]"
+                  moduleName = "VKCssProtocolDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Awhisper/Desktop/Github/VKCssProtocol/VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
+                  timestampString = "498660836.327925"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
+            timestampString = "498660855.151262"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-refreshListeningUI"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
+            timestampString = "498660864.471803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "+addHotReloaderTarger:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

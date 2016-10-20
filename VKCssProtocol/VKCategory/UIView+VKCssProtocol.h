@@ -19,4 +19,6 @@ autoreleasepool{ target.cssStyle = cssStyles;}; \
 @property(nonatomic,strong) NSString *cssStyle;
 @property(nonatomic,strong) NSString *cssClass;
 
+-(void)refreshCSS;
+
 @end

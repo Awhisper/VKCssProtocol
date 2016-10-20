@@ -116,8 +116,8 @@ VK_DEF_SINGLETON
 
 +(void)reloadCssFile
 {
-    NSDictionary *fileArray = [[VKCssClassManager singleton].cssFileArr copy];
-    for (NSString * cssFilePath in fileArray.allKeys) {
+    NSDictionary *fileArray = [[VKCssClassManager singleton].cssFileArr.allKeys copy];
+    for (NSString * cssFilePath in fileArray) {
         [VKCssClassManager readCssFilePath:cssFilePath];
     }
 }
