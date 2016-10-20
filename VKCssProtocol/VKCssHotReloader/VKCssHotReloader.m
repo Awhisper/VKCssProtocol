@@ -8,6 +8,7 @@
 
 #import "VKCssHotReloader.h"
 #import "SGDirWatchdog.h"
+#import "VKCssClassManager.h"
 @interface VKCssHotReloader ()
 
 @property (nonatomic,strong) NSString *rootPath;
@@ -19,42 +20,67 @@
 @implementation VKCssHotReloader
 VK_DEF_SINGLETON
 
--(void)startCSSPath:(NSString *)mainScriptPath
+-(instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.watchDogs = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
++(void)startHotReloaderWithCssPath:(NSString *)path{
+    //playground调试
+    //JS测试包的本地绝对路径
+    NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];;
+    
+    NSString *scriptPath = [NSString stringWithFormat:@"%@%@", rootPath, @"/cssClass.css"];
+    
+    [VKCssClassManager readCssFilePath:scriptPath];
+    
+    [[VKCssHotReloader singleton]startCSSPath:scriptPath];
+}
+
++(void)endHotReloader{
+    [[VKCssHotReloader singleton] watchJSFile:NO];
+}
+
+-(void)startCSSPath:(NSString *)cssPath
 {
 #if TARGET_IPHONE_SIMULATOR
-    self.rootPath = mainScriptPath;
+    self.rootPath = cssPath;
     
-    NSString *scriptRootPath = [mainScriptPath stringByDeletingLastPathComponent];
+    NSString *cssRootPath = [cssPath stringByDeletingLastPathComponent];
     
-    NSArray *contentOfFolder = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:scriptRootPath error:NULL];
-    [self watchFolder:scriptRootPath mainScriptPath:mainScriptPath];
-    
-    if ([scriptRootPath rangeOfString:@".app"].location != NSNotFound) {
-        NSString *apphomepath = [scriptRootPath stringByDeletingLastPathComponent];
-        [self watchFolder:apphomepath mainScriptPath:mainScriptPath];
-    }
-    
-    for (NSString *aPath in contentOfFolder) {
-        NSString * fullPath = [scriptRootPath stringByAppendingPathComponent:aPath];
-        BOOL isDir;
-        if ([[NSFileManager defaultManager] fileExistsAtPath:fullPath isDirectory:&isDir] && isDir) {
-            [self watchFolder:fullPath mainScriptPath:mainScriptPath];
+    [self watchFolder:cssRootPath];
+#endif
+}
+
+
+- (void)watchFolder:(NSString *)path
+{
+#if TARGET_IPHONE_SIMULATOR
+    SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:path update:^{
+//        [VKCssClassManager reloadCssFile];
+        NSLog(@"change======");
+    }];
+    [self.watchDogs addObject:watchDog];
+    [watchDog start];
+#endif
+}
+
+
+-(void)watchJSFile:(BOOL)watch
+{
+#if TARGET_IPHONE_SIMULATOR
+    for (SGDirWatchdog *dog in self.watchDogs) {
+        if (watch) {
+            [dog start];
+        }else{
+            [dog stop];
         }
     }
 #endif
 }
-
-
-- (void)watchFolder:(NSString *)folderPath mainScriptPath:(NSString *)mainScriptPath
-{
-#if TARGET_IPHONE_SIMULATOR
-    SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:mainScriptPath update:^{
-//        [self reload];
-        NSLog(@"change======");
-    }];
-    [self.watchDogs addObject:watchDog];
-#endif
-}
-
 
 @end

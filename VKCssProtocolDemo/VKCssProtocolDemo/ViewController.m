@@ -17,14 +17,16 @@
 
 -(void)initCss{
     
-    @defCssClass(defName(@"标准工具栏样式"),
-                 defStyles(@"background-color:yellow"));
     
-    @defCssClass(defName(@"标准配字"),
-                 defStyles(defStyle(@"color",@"black"),
-                           defStyle(@"font-size",@"30")));
     
-    @loadCssFile(@"cssClass");
+//    @defCssClass(defName(@"标准工具栏样式"),
+//                 defStyles(@"background-color:yellow"));
+//    
+//    @defCssClass(defName(@"标准配字"),
+//                 defStyles(defStyle(@"color",@"black"),
+//                           defStyle(@"font-size",@"30")));
+//    
+//    @loadCssFile(@"cssClass");
 }
 
 - (void)viewDidLoad {
@@ -40,7 +42,7 @@
 
     [self.view addSubview:lbabc];
     
-    [[VKCssHotReloader singleton]startCSSPath:@"/Users/Awhisper/Desktop/Github/VKCssProtocol/VKCssProtocolDemo/VKCssProtocolDemo/cssClass.css"];
+    
     
 }
 
