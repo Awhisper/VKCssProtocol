@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "VKCssProtocol.h"
-
+#import "VKCssHotReloader.h"
 @interface ViewController ()
 
 @end
@@ -32,15 +32,16 @@
     [self initCss];
     
     UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
-    [btabc setTitle:@"aaaa" forState:UIControlStateNormal];
     btabc.cssClass = @"commenBar commenText";
     [self.view addSubview:btabc];
     
     UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];
-    lbabc.text = @"bbb";
     lbabc.cssClass = @"commenBar commenText";
 
     [self.view addSubview:lbabc];
+    
+    [[VKCssHotReloader singleton]startCSSPath:@"/Users/Awhisper/Desktop/Github/VKCssProtocol/VKCssProtocolDemo/VKCssProtocolDemo/cssClass.css"];
+    
 }
 
 
