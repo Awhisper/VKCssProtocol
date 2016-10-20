@@ -42,22 +42,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssClass/VKCssClassManager.m"
-            timestampString = "498277341.099562"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "+readBundleCssFile:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../VKCssProtocol/VKCssClass/VKCssClassManager.m"
             timestampString = "498294798.720994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

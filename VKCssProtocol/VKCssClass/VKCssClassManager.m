@@ -9,6 +9,12 @@
 #import "VKCssClassManager.h"
 #import "VKCssStyleManager.h"
 
+@interface VKCssClassManager ()
+
+@property (nonatomic,strong) NSMutableDictionary *cssFileArr;
+
+@end
+
 @implementation VKCssClassManager
 
 VK_DEF_SINGLETON
@@ -17,6 +23,7 @@ VK_DEF_SINGLETON
     self = [super init];
     if (self) {
         self.cssClassDic = [[NSMutableDictionary alloc]init];
+        self.cssFileArr = [[NSMutableDictionary alloc]init];
     }
     return self;
 }
@@ -93,10 +100,26 @@ VK_DEF_SINGLETON
 {
     NSString *cssFilePath = [[NSBundle mainBundle] pathForResource:cssFile ofType:@"css"];
 
-    
+    [VKCssClassManager readCssFilePath:cssFilePath];
+}
+
++(void)readCssFilePath:(NSString *)cssFilePath
+{
     NSString *css = [NSString stringWithContentsOfFile:cssFilePath encoding:NSUTF8StringEncoding error:nil];
     
     [VKCssClassManager parseCssContent:css];
+    
+    if (cssFilePath && css) {
+        [[VKCssClassManager singleton].cssFileArr setObject:css forKey:cssFilePath];
+    }
+}
+
++(void)reloadCssFile
+{
+    NSDictionary *fileArray = [[VKCssClassManager singleton].cssFileArr copy];
+    for (NSString * cssFilePath in fileArray.allKeys) {
+        [VKCssClassManager readCssFilePath:cssFilePath];
+    }
 }
 
 +(void)parseCssContent:(NSString *)cssContent
