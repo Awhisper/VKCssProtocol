@@ -25,6 +25,7 @@
     [VKCssHotReloader hotReloaderListenCssPath:cssPath];
     [VKCssHotReloader startHotReloader];
     
+    
 //    @defCssClass(defName(@"标准工具栏样式"),
 //                 defStyles(@"background-color:yellow"));
 //    
@@ -41,7 +42,7 @@
     [self initCss];
     
     UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
-    btabc.cssClass = @"commenBar commenText";
+    btabc.cssClass = @"commenBar commenText commenImage";
     [self.view addSubview:btabc];
     
     UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];

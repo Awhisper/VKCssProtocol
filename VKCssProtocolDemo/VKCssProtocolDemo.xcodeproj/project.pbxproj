@@ -10,6 +10,7 @@
 		6C0B3A051DB65BE8003D953A /* VKBorderColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B3A041DB65BE8003D953A /* VKBorderColorStyle.m */; };
 		6C0B3A081DB65E19003D953A /* VKBorderWidthStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B3A071DB65E19003D953A /* VKBorderWidthStyle.m */; };
 		6C8614901DBA466D004DCAA9 /* VKFontFamiltyStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C86148F1DBA466D004DCAA9 /* VKFontFamiltyStyle.m */; };
+		6C8614931DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8614921DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m */; };
 		6CB567E71DB7A1C8004D8AFA /* NSObject+VKIdHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB567E61DB7A1C8004D8AFA /* NSObject+VKIdHelper.m */; };
 		6CB567EA1DB7A909004D8AFA /* VKTextAlignStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB567E91DB7A909004D8AFA /* VKTextAlignStyle.m */; };
 		6CB567ED1DB7AB86004D8AFA /* VKBorderRadiusStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB567EC1DB7AB86004D8AFA /* VKBorderRadiusStyle.m */; };
@@ -40,6 +41,8 @@
 		6C0B3A071DB65E19003D953A /* VKBorderWidthStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderWidthStyle.m; sourceTree = "<group>"; };
 		6C86148E1DBA466D004DCAA9 /* VKFontFamiltyStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontFamiltyStyle.h; sourceTree = "<group>"; };
 		6C86148F1DBA466D004DCAA9 /* VKFontFamiltyStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontFamiltyStyle.m; sourceTree = "<group>"; };
+		6C8614911DBA4F6F004DCAA9 /* VKBackgroundImageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBackgroundImageStyle.h; sourceTree = "<group>"; };
+		6C8614921DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBackgroundImageStyle.m; sourceTree = "<group>"; };
 		6CB567E41DB7A04D004D8AFA /* VKCssStyleConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKCssStyleConstants.h; sourceTree = "<group>"; };
 		6CB567E51DB7A1C8004D8AFA /* NSObject+VKIdHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VKIdHelper.h"; sourceTree = "<group>"; };
 		6CB567E61DB7A1C8004D8AFA /* NSObject+VKIdHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VKIdHelper.m"; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				6CB567EF1DB7ACB2004D8AFA /* VKTextStyle.m */,
 				6C86148E1DBA466D004DCAA9 /* VKFontFamiltyStyle.h */,
 				6C86148F1DBA466D004DCAA9 /* VKFontFamiltyStyle.m */,
+				6C8614911DBA4F6F004DCAA9 /* VKBackgroundImageStyle.h */,
+				6C8614921DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m */,
 			);
 			path = VKStyles;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */,
 				6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */,
 				6C8614901DBA466D004DCAA9 /* VKFontFamiltyStyle.m in Sources */,
+				6C8614931DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m in Sources */,
 				6CB567E71DB7A1C8004D8AFA /* NSObject+VKIdHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
