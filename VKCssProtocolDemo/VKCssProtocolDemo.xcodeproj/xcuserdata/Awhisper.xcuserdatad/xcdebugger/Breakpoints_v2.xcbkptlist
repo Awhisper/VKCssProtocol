@@ -292,11 +292,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660753.968294"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-watchFolder:"
             landmarkType = "7">
          </BreakpointContent>
@@ -308,11 +308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660753.968294"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-startCSSPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -324,11 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660753.968294"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-watchFolder:"
             landmarkType = "7">
             <Locations>
@@ -372,11 +372,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660753.968294"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "-watchJSFile:"
             landmarkType = "7">
             <Locations>
@@ -420,11 +420,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660753.968294"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-watchFolder:"
             landmarkType = "7">
          </BreakpointContent>
@@ -484,11 +484,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660807.584249"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-refreshListeningUI"
             landmarkType = "7">
             <Locations>
@@ -532,11 +532,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660855.151262"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-refreshListeningUI"
             landmarkType = "7">
          </BreakpointContent>
@@ -548,11 +548,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../VKCssProtocol/VKCssHotReloader/VKCssHotReloader.m"
-            timestampString = "498660864.471803"
+            timestampString = "498746739.176051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "+addHotReloaderTarger:"
             landmarkType = "7">
          </BreakpointContent>

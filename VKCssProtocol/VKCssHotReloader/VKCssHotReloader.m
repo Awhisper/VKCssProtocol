@@ -35,11 +35,13 @@ VK_DEF_SINGLETON
     return self;
 }
 
-+(void)startHotReloaderWithCssPath:(NSString *)path{
++(void)hotReloaderListenCssPath:(NSString *)path{
     [VKCssClassManager readCssFilePath:path];
-    
     [[VKCssHotReloader singleton]startCSSPath:path];
-    
+}
+
++(void)startHotReloader{
+    [[VKCssHotReloader singleton] watchJSFile:YES];
     [VKCssHotReloader singleton].isHotReload = YES;
 }
 
@@ -78,7 +80,6 @@ VK_DEF_SINGLETON
         NSLog(@"change======");
     }];
     [self.watchDogs addObject:watchDog];
-    [watchDog start];
 #endif
 }
 

@@ -13,7 +13,9 @@
 @interface VKCssHotReloader : NSObject
 VK_AS_SINGLETON
 
-+(void)startHotReloaderWithCssPath:(NSString *)path;
++(void)hotReloaderListenCssPath:(NSString *)path;
+
++(void)startHotReloader;
 
 +(void)endHotReloader;
 

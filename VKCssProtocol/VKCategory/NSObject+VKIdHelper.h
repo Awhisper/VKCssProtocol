@@ -13,5 +13,6 @@
 -(UIColor *)VKIdToColor;
 -(NSInteger)VKIdToInt;
 -(CGFloat)VKIdToCGFloat;
+-(NSString *)VKIdToString;
 
 @end

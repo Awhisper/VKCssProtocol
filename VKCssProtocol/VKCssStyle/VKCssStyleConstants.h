@@ -17,5 +17,11 @@ static NSString * vkcss_border_color = @"border-color";
 static NSString * vkcss_border_width = @"border-width";
 static NSString * vkcss_text_align = @"text-align";
 static NSString * vkcss_text = @"text";
+static NSString * vkcss_font_family = @"font-family";
+
+static NSString * vkcssvalue_font_system = @"systemFont";
+static NSString * vkcssvalue_font_boldsystem = @"boldSystemFont";
+static NSString * vkcssvalue_font_italicsystem = @"italicSystemFont";
+
 
 #endif /* VKCssStyleConstants_h */

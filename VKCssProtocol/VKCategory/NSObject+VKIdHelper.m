@@ -54,4 +54,11 @@
     
     return value;
 }
+
+-(NSString *)VKIdToString{
+    if ([self isKindOfClass:[NSString class]]) {
+        return (NSString *)self;
+    }
+    return nil;
+}
 @end

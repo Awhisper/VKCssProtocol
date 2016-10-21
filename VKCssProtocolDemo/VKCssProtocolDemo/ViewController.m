@@ -20,9 +20,11 @@
     //JS测试包的本地绝对路径
     NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];;
     
-    NSString *scriptPath = [NSString stringWithFormat:@"%@%@", rootPath, @"/cssClass.css"];
+    NSString *cssPath = [NSString stringWithFormat:@"%@%@", rootPath, @"/cssClass.css"];
     
-    [VKCssHotReloader startHotReloaderWithCssPath:scriptPath];
+    [VKCssHotReloader hotReloaderListenCssPath:cssPath];
+    [VKCssHotReloader startHotReloader];
+    
 //    @defCssClass(defName(@"标准工具栏样式"),
 //                 defStyles(@"background-color:yellow"));
 //    
@@ -32,6 +34,7 @@
 //    
 //    @loadCssFile(@"cssClass");
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
