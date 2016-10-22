@@ -1,13 +1,13 @@
 //
-//  VKTextTransformStyle.m
+//  UIButton+VKAddion.h
 //  VKCssProtocolDemo
 //
 //  Created by Awhisper on 2016/10/22.
 //  Copyright © 2016年 baidu. All rights reserved.
 //
 
-#import "VKTextTransformStyle.h"
+#import <UIKit/UIKit.h>
 
-@implementation VKTextTransformStyle
+@interface UIButton (VKAddion)
 
 @end

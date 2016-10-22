@@ -1,13 +1,14 @@
 //
-//  VKTextTransformStyle.h
+//  UILabel+VKAddion.h
 //  VKCssProtocolDemo
 //
 //  Created by Awhisper on 2016/10/22.
 //  Copyright © 2016年 baidu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface VKTextTransformStyle : NSObject
+@interface UILabel (VKAddion)
 
+@property(nonatomic,strong) NSString *cssTransform;
 @end
