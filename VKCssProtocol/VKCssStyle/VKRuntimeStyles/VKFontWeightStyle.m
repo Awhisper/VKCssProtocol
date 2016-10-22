@@ -7,7 +7,7 @@
 //
 
 #import "VKFontWeightStyle.h"
-
+#import "UILabel+VKAddion.h"
 @implementation VKFontWeightStyle
 
 
@@ -19,11 +19,11 @@ VK_REGISTE_ATTRIBUTE()
 
 + (void)setTarget:(id)target styleValue:(id)value{
     
-    NSString *decoration = [value VKIdToString];
+    NSString *weight = [value VKIdToString];
     
     if ([target isKindOfClass:[UILabel class]]) {
         UILabel *targetLb = (UILabel *)target;
-        targetLb.cssDecoration = decoration;
+        targetLb.cssFontWeight = weight;
     }
 }
 

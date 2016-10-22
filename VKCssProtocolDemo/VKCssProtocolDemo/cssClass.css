@@ -9,14 +9,14 @@ absss
 
 
 .commenText{
-    text: aaabbb;
     font-family: italicSystemFont ;
     color:black ;
     font-size: 30 px ;
     text-align : center;
-    text-shadow: red;
     text-transform: capitalize;
-    text-decoration: underline
+    text-decoration: underline;
+    font-weight:bold;
+    text: aaabbb;
 }
 
 

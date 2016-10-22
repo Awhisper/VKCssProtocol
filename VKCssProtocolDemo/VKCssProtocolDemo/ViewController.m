@@ -41,9 +41,9 @@
     [super viewDidLoad];
     [self initCss];
     
-    UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
-    btabc.cssClass = @"commenBar commenText commenImage";
-    [self.view addSubview:btabc];
+//    UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
+//    btabc.cssClass = @"commenBar commenText commenImage";
+//    [self.view addSubview:btabc];
     
     UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];
     lbabc.cssClass = @"commenBar commenText";

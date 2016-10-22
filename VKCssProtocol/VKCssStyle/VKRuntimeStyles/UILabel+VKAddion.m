@@ -68,7 +68,7 @@
         }
     }
     
-    if (self.cssDecoration) {
+    if (self.cssDecoration || self.cssFontWeight) {
         NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:finalText];
         
         if ([self.cssDecoration isEqualToString:@"underline"]) {
@@ -78,6 +78,12 @@
         if ([self.cssDecoration isEqualToString:@"line-through"]) {
             [str vk_setThroughStyle:kCTUnderlineStyleSingle modifier:kCTUnderlinePatternSolid];;
         }
+        
+        if ([self.cssFontWeight isEqualToString:@"bold"]) {
+            [str vk_setTextColor:<#(UIColor *)#>]
+            [str vk_setStrokeWidth:5];
+        }
+        
         [self setAttributedText:str];
         return;
     }

@@ -15,4 +15,5 @@
 @property(nonatomic,strong) NSString *cssDecoration;
 
 @property(nonatomic,strong) NSString *cssFontWeight;
+
 @end
