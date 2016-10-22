@@ -8,6 +8,7 @@
 
 #import "UILabel+VKAddion.h"
 #import <objc/runtime.h>
+#import "NSMutableAttributedString+VKAttributedString.h"
 @implementation UILabel (VKAddion)
 
 +(void)load
@@ -34,6 +35,23 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+-(void)setCssDecoration:(NSString *)cssDecoration{
+    objc_setAssociatedObject(self, @selector(cssDecoration), cssDecoration, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSString *)cssDecoration{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setCssFontWeight:(NSString *)cssFontWeight{
+    objc_setAssociatedObject(self, @selector(cssFontWeight), cssFontWeight, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSString *)cssFontWeight
+{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 -(void)vk_setText:(NSString *)text{
     NSString *finalText = text;
     if (self.cssTransform) {
@@ -48,6 +66,20 @@
         if ([self.cssTransform isEqualToString:@"capitalize"]) {
             finalText = [text capitalizedString];
         }
+    }
+    
+    if (self.cssDecoration) {
+        NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:finalText];
+        
+        if ([self.cssDecoration isEqualToString:@"underline"]) {
+            [str vk_setUnderlineStyle:kCTUnderlineStyleSingle modifier:kCTUnderlinePatternSolid];;
+        }
+        
+        if ([self.cssDecoration isEqualToString:@"line-through"]) {
+            [str vk_setThroughStyle:kCTUnderlineStyleSingle modifier:kCTUnderlinePatternSolid];;
+        }
+        [self setAttributedText:str];
+        return;
     }
     
     [self vk_setText:finalText];

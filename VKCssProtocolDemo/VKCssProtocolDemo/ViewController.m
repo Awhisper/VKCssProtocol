@@ -47,7 +47,7 @@
     
     UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];
     lbabc.cssClass = @"commenBar commenText";
-
+    lbabc.text = @"aaaaabbbbb";
     [self.view addSubview:lbabc];
     
     

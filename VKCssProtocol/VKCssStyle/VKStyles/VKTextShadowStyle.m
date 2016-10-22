@@ -23,9 +23,6 @@ VK_REGISTE_ATTRIBUTE()
     if ([target isKindOfClass:[UILabel class]]) {
         UILabel *targetLb = (UILabel *)target;
         targetLb.shadowColor = color;
-        if (CGSizeEqualToSize(targetLb.shadowOffset, CGSizeZero)) {
-            targetLb.shadowOffset = CGSizeMake(1, 0);
-        }
     }
     
     if ([target isKindOfClass:[UIButton class]]) {

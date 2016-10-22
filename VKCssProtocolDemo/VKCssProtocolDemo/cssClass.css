@@ -15,7 +15,8 @@ absss
     font-size: 30 px ;
     text-align : center;
     text-shadow: red;
-    text-transform: capitalize
+    text-transform: capitalize;
+    text-decoration: underline
 }
 
 

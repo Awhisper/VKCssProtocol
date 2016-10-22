@@ -13,6 +13,9 @@
 		6C3818841DBB5F6E000825F1 /* UILabel+VKAddion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3818811DBB5F6E000825F1 /* UILabel+VKAddion.m */; };
 		6C3818851DBB5F6E000825F1 /* VKTextTransformStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3818831DBB5F6E000825F1 /* VKTextTransformStyle.m */; };
 		6C3818881DBB62D2000825F1 /* UIButton+VKAddion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3818871DBB62D2000825F1 /* UIButton+VKAddion.m */; };
+		6C38188B1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38188A1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m */; };
+		6C38188E1DBB678C000825F1 /* VKTextDecorationStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38188D1DBB678C000825F1 /* VKTextDecorationStyle.m */; };
+		6C3818911DBB6E9A000825F1 /* VKFontWeightStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3818901DBB6E9A000825F1 /* VKFontWeightStyle.m */; };
 		6C8614901DBA466D004DCAA9 /* VKFontFamiltyStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C86148F1DBA466D004DCAA9 /* VKFontFamiltyStyle.m */; };
 		6C8614931DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8614921DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m */; };
 		6CB567E71DB7A1C8004D8AFA /* NSObject+VKIdHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB567E61DB7A1C8004D8AFA /* NSObject+VKIdHelper.m */; };
@@ -51,6 +54,12 @@
 		6C3818831DBB5F6E000825F1 /* VKTextTransformStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKTextTransformStyle.m; sourceTree = "<group>"; };
 		6C3818861DBB62D2000825F1 /* UIButton+VKAddion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VKAddion.h"; sourceTree = "<group>"; };
 		6C3818871DBB62D2000825F1 /* UIButton+VKAddion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VKAddion.m"; sourceTree = "<group>"; };
+		6C3818891DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+VKAttributedString.h"; sourceTree = "<group>"; };
+		6C38188A1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+VKAttributedString.m"; sourceTree = "<group>"; };
+		6C38188C1DBB678C000825F1 /* VKTextDecorationStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKTextDecorationStyle.h; sourceTree = "<group>"; };
+		6C38188D1DBB678C000825F1 /* VKTextDecorationStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKTextDecorationStyle.m; sourceTree = "<group>"; };
+		6C38188F1DBB6E9A000825F1 /* VKFontWeightStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontWeightStyle.h; sourceTree = "<group>"; };
+		6C3818901DBB6E9A000825F1 /* VKFontWeightStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontWeightStyle.m; sourceTree = "<group>"; };
 		6C86148E1DBA466D004DCAA9 /* VKFontFamiltyStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontFamiltyStyle.h; sourceTree = "<group>"; };
 		6C86148F1DBA466D004DCAA9 /* VKFontFamiltyStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontFamiltyStyle.m; sourceTree = "<group>"; };
 		6C8614911DBA4F6F004DCAA9 /* VKBackgroundImageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBackgroundImageStyle.h; sourceTree = "<group>"; };
@@ -121,6 +130,10 @@
 				6C3818871DBB62D2000825F1 /* UIButton+VKAddion.m */,
 				6C3818821DBB5F6E000825F1 /* VKTextTransformStyle.h */,
 				6C3818831DBB5F6E000825F1 /* VKTextTransformStyle.m */,
+				6C38188C1DBB678C000825F1 /* VKTextDecorationStyle.h */,
+				6C38188D1DBB678C000825F1 /* VKTextDecorationStyle.m */,
+				6C38188F1DBB6E9A000825F1 /* VKFontWeightStyle.h */,
+				6C3818901DBB6E9A000825F1 /* VKFontWeightStyle.m */,
 			);
 			path = VKRuntimeStyles;
 			sourceTree = "<group>";
@@ -194,6 +207,8 @@
 		6CED74611DAE55ED0021109E /* VKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				6C3818891DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.h */,
+				6C38188A1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m */,
 				6CED74621DAE55ED0021109E /* NSObject+VKSingleton.h */,
 				6CB567E51DB7A1C8004D8AFA /* NSObject+VKIdHelper.h */,
 				6CB567E61DB7A1C8004D8AFA /* NSObject+VKIdHelper.m */,
@@ -334,6 +349,7 @@
 				6C3818841DBB5F6E000825F1 /* UILabel+VKAddion.m in Sources */,
 				6CED74791DAE55ED0021109E /* UIView+VKCssProtocol.m in Sources */,
 				6C0B3A081DB65E19003D953A /* VKBorderWidthStyle.m in Sources */,
+				6C38188E1DBB678C000825F1 /* VKTextDecorationStyle.m in Sources */,
 				6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */,
 				6CED74511DAE550E0021109E /* ViewController.m in Sources */,
 				6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */,
@@ -345,6 +361,7 @@
 				6CED744B1DAE550E0021109E /* main.m in Sources */,
 				6C0B3A051DB65BE8003D953A /* VKBorderColorStyle.m in Sources */,
 				6CB567F01DB7ACB2004D8AFA /* VKTextStyle.m in Sources */,
+				6C38188B1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m in Sources */,
 				6CED74781DAE55ED0021109E /* UIColor+VKUtlities.m in Sources */,
 				6CB567EA1DB7A909004D8AFA /* VKTextAlignStyle.m in Sources */,
 				6CB89FE01DB8E71600FF5213 /* VKCssHotReloader.m in Sources */,
@@ -356,6 +373,7 @@
 				6C8614901DBA466D004DCAA9 /* VKFontFamiltyStyle.m in Sources */,
 				6C8614931DBA4F6F004DCAA9 /* VKBackgroundImageStyle.m in Sources */,
 				6CB567E71DB7A1C8004D8AFA /* NSObject+VKIdHelper.m in Sources */,
+				6C3818911DBB6E9A000825F1 /* VKFontWeightStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,5 +31,8 @@ static NSString * vkcssvalue_text_transform_capitalize = @"capitalize";
 static NSString * vkcssvalue_text_transform_uppercase = @"uppercase";
 static NSString * vkcssvalue_text_transform_lowercase = @"lowercase";
 
+static NSString * vkcss_text_decoration = @"text-decoration";
+static NSString * vkcssvalue_text_decoration_underline = @"underline";
+static NSString * vkcssvalue_text_decoration_line_through = @"line-through";
 
 #endif /* VKCssStyleConstants_h */
