@@ -19,6 +19,8 @@ static NSString * vkcss_text_align = @"text-align";
 static NSString * vkcss_text = @"text";
 static NSString * vkcss_font_family = @"font-family";
 static NSString * vkcss_background_image = @"background-image";
+static NSString * vkcss_text_shadow = @"text-shadow";
+
 
 static NSString * vkcssvalue_font_system = @"systemFont";
 static NSString * vkcssvalue_font_boldsystem = @"boldSystemFont";
