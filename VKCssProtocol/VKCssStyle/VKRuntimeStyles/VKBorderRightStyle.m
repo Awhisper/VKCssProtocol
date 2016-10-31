@@ -1,20 +1,19 @@
 //
-//  VKBorderTopStyle.m
+//  VKBorderRightStyle.m
 //  VKCssProtocolDemo
 //
 //  Created by Awhisper on 2016/10/31.
 //  Copyright © 2016年 baidu. All rights reserved.
 //
 
-#import "VKBorderTopStyle.h"
+#import "VKBorderRightStyle.h"
 #import "UIView+VKAddion.h"
-@implementation VKBorderTopStyle
-
+@implementation VKBorderRightStyle
 
 VK_REGISTE_ATTRIBUTE()
 
 + (NSString *)styleName{
-    return @"border-top";
+    return @"border-right";
 }
 
 + (void)setTarget:(id)target styleValue:(id)value{
@@ -35,14 +34,13 @@ VK_REGISTE_ATTRIBUTE()
     if ([target isKindOfClass:[UIView class]]) {
         UIView *view = (UIView *)target;
         if (color && width) {
-            view.cssTopBorderWidth = width;
-            view.cssTopBorderColor = color;
+            view.cssRightBorderWidth = width;
+            view.cssRightBorderColor = color;
             NSInteger currentBorderInt = [view.cssClipBorder integerValue];
-            currentBorderInt = currentBorderInt | 0x1000;
+            currentBorderInt = currentBorderInt | 0x0100;
             view.cssClipBorder = [NSNumber numberWithInteger:currentBorderInt];
         }
     }
 }
-
 
 @end

@@ -159,6 +159,7 @@
         }
         self.cssTopBorder.height = [self.cssTopBorderWidth floatValue];
         self.cssTopBorder.backgroundColor = self.cssTopBorderColor;
+        [self addSubview:self.cssTopBorder];
     }else{
         [self.cssTopBorder removeFromSuperview];
         self.cssTopBorder = nil;
@@ -166,11 +167,12 @@
     
     if (currentBorder & rightInt) {
         if (!self.cssRightBorder) {
-            self.cssRightBorder = [[UIView alloc]initWithFrame:CGRectMake(0, self.width, 0,self.height)];
+            self.cssRightBorder = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0,self.height)];
         }
         self.cssRightBorder.left = self.width - [self.cssRightBorderWidth floatValue];
         self.cssRightBorder.width = [self.cssRightBorderWidth floatValue];
         self.cssRightBorder.backgroundColor = self.cssRightBorderColor;
+        [self addSubview:self.cssRightBorder];
     }else{
         [self.cssRightBorder removeFromSuperview];
         self.cssRightBorder = nil;
@@ -183,6 +185,7 @@
         self.cssBottomBorder.top = self.height - [self.cssBottomBorderWidth floatValue];
         self.cssBottomBorder.height = [self.cssBottomBorderWidth floatValue];
         self.cssBottomBorder.backgroundColor = self.cssBottomBorderColor;
+        [self addSubview:self.cssBottomBorder];
     }else{
         [self.cssBottomBorder removeFromSuperview];
         self.cssBottomBorder = nil;
@@ -194,6 +197,7 @@
         }
         self.cssLeftBorder.width = [self.cssLeftBorderWidth floatValue];
         self.cssLeftBorder.backgroundColor = self.cssLeftBorderColor;
+        [self addSubview:self.cssLeftBorder];
     }else{
         [self.cssLeftBorder removeFromSuperview];
         self.cssLeftBorder = nil;

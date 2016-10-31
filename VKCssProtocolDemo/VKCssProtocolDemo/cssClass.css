@@ -4,6 +4,8 @@ absss
     border-color:red;
     border-width:0.5 px;
     border-radius:5 px;
+    border-top: 5px solid #474747;
+    border-right: 5px solid green
 }
 
 
