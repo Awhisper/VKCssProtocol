@@ -35,4 +35,9 @@ static NSString * vkcss_text_decoration = @"text-decoration";
 static NSString * vkcssvalue_text_decoration_underline = @"underline";
 static NSString * vkcssvalue_text_decoration_line_through = @"line-through";
 
+static NSString * vkcss_border_top = @"border-top";
+static NSString * vkcss_border_left = @"border-left";
+static NSString * vkcss_border_right = @"border-right";
+static NSString * vkcss_border_bottom = @"border-bottom";
+
 #endif /* VKCssStyleConstants_h */
