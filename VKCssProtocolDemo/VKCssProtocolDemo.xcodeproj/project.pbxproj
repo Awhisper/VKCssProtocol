@@ -27,6 +27,8 @@
 		6CC1E1A41DC77BCE00300D69 /* UIView+VKMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E1A21DC77BCE00300D69 /* UIView+VKMetrics.m */; };
 		6CC1E1A71DC77DAD00300D69 /* VKBorderTopStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E1A61DC77DAD00300D69 /* VKBorderTopStyle.m */; };
 		6CC1E1AA1DC7869B00300D69 /* VKBorderRightStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E1A91DC7869B00300D69 /* VKBorderRightStyle.m */; };
+		6CC1E1AD1DC7880600300D69 /* VKBorderBottomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E1AC1DC7880600300D69 /* VKBorderBottomStyle.m */; };
+		6CC1E1B01DC7884900300D69 /* VKBorderLeftStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E1AF1DC7884900300D69 /* VKBorderLeftStyle.m */; };
 		6CED744B1DAE550E0021109E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744A1DAE550E0021109E /* main.m */; };
 		6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744D1DAE550E0021109E /* AppDelegate.m */; };
 		6CED74511DAE550E0021109E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74501DAE550E0021109E /* ViewController.m */; };
@@ -88,6 +90,10 @@
 		6CC1E1A61DC77DAD00300D69 /* VKBorderTopStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderTopStyle.m; sourceTree = "<group>"; };
 		6CC1E1A81DC7869B00300D69 /* VKBorderRightStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderRightStyle.h; sourceTree = "<group>"; };
 		6CC1E1A91DC7869B00300D69 /* VKBorderRightStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderRightStyle.m; sourceTree = "<group>"; };
+		6CC1E1AB1DC7880600300D69 /* VKBorderBottomStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderBottomStyle.h; sourceTree = "<group>"; };
+		6CC1E1AC1DC7880600300D69 /* VKBorderBottomStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderBottomStyle.m; sourceTree = "<group>"; };
+		6CC1E1AE1DC7884900300D69 /* VKBorderLeftStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBorderLeftStyle.h; sourceTree = "<group>"; };
+		6CC1E1AF1DC7884900300D69 /* VKBorderLeftStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBorderLeftStyle.m; sourceTree = "<group>"; };
 		6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCssProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CED744A1DAE550E0021109E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CED744C1DAE550E0021109E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +159,10 @@
 				6CC1E1A61DC77DAD00300D69 /* VKBorderTopStyle.m */,
 				6CC1E1A81DC7869B00300D69 /* VKBorderRightStyle.h */,
 				6CC1E1A91DC7869B00300D69 /* VKBorderRightStyle.m */,
+				6CC1E1AB1DC7880600300D69 /* VKBorderBottomStyle.h */,
+				6CC1E1AC1DC7880600300D69 /* VKBorderBottomStyle.m */,
+				6CC1E1AE1DC7884900300D69 /* VKBorderLeftStyle.h */,
+				6CC1E1AF1DC7884900300D69 /* VKBorderLeftStyle.m */,
 			);
 			path = VKRuntimeStyles;
 			sourceTree = "<group>";
@@ -383,6 +393,7 @@
 				6CED749C1DAE589B0021109E /* VKBackgroundcolorStyle.m in Sources */,
 				6CB567ED1DB7AB86004D8AFA /* VKBorderRadiusStyle.m in Sources */,
 				6CED744B1DAE550E0021109E /* main.m in Sources */,
+				6CC1E1AD1DC7880600300D69 /* VKBorderBottomStyle.m in Sources */,
 				6C0B3A051DB65BE8003D953A /* VKBorderColorStyle.m in Sources */,
 				6CB567F01DB7ACB2004D8AFA /* VKTextStyle.m in Sources */,
 				6C38188B1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m in Sources */,
@@ -392,6 +403,7 @@
 				6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */,
 				6C3818751DBB5122000825F1 /* VKTextShadowStyle.m in Sources */,
 				6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */,
+				6CC1E1B01DC7884900300D69 /* VKBorderLeftStyle.m in Sources */,
 				6CC1E1A41DC77BCE00300D69 /* UIView+VKMetrics.m in Sources */,
 				6C3818851DBB5F6E000825F1 /* VKTextTransformStyle.m in Sources */,
 				6C3818881DBB62D2000825F1 /* UIButton+VKAddion.m in Sources */,

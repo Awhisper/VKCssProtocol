@@ -5,7 +5,9 @@ absss
     border-width:0.5 px;
     border-radius:5 px;
     border-top: 5px solid #474747;
-    border-right: 5px solid green
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+    border-left: 5px solid orange;
 }
 
 
