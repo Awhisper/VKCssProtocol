@@ -81,6 +81,9 @@
         
         if ([self.cssFontWeight isEqualToString:@"bold"]) {
             [str vk_setStrokeWidth:5];
+            [str vk_setStrokeColor:[UIColor blackColor]];
+            [str vk_setTextColor:[UIColor blackColor]];
+            self.textColor = [UIColor blackColor];
         }
         
         [self setAttributedText:str];

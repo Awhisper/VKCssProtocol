@@ -146,7 +146,7 @@
 - (void)vk_setThroughStyle:(CTUnderlineStyle)style
                     modifier:(CTUnderlineStyleModifiers)modifier
                        range:(NSRange)range {
-    [self removeAttribute:NSUnderlineStyleAttributeName range:range];
+    [self removeAttribute:NSStrikethroughStyleAttributeName range:range];
     [self addAttribute:NSStrikethroughStyleAttributeName value:@(style|modifier) range:range];
 }
 

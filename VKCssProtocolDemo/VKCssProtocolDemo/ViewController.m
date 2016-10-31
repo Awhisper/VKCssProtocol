@@ -43,6 +43,7 @@
     
     UIButton *btabc = [[UIButton alloc]initWithFrame:CGRectMake(0, 140, self.view.bounds.size.width, 40)];
     btabc.cssClass = @"commenBar commenText commenImage";
+    [btabc setTitle:@"aaa111" forState:UIControlStateNormal];
     [self.view addSubview:btabc];
     
     UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(0, 240, self.view.bounds.size.width, 40)];

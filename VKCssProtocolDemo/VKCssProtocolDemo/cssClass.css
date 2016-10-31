@@ -10,17 +10,15 @@ absss
     border-left: 5px solid orange;
 }
 
-
-
 .commenText{
     font-family: italicSystemFont ;
     color:black ;
     font-size: 30 px ;
     text-align : center;
     text-transform: capitalize;
-    text-decoration: underline;
+    text-decoration: line-through;
     font-weight:bold;
-    text: aaabbb;
+    text:aaaaaBbb;
 }
 
 
