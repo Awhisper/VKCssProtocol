@@ -80,7 +80,6 @@
         }
         
         if ([self.cssFontWeight isEqualToString:@"bold"]) {
-            [str vk_setTextColor:<#(UIColor *)#>]
             [str vk_setStrokeWidth:5];
         }
         

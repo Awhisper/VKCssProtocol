@@ -24,6 +24,7 @@
 		6CB567F01DB7ACB2004D8AFA /* VKTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB567EF1DB7ACB2004D8AFA /* VKTextStyle.m */; };
 		6CB89FE01DB8E71600FF5213 /* VKCssHotReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB89FDF1DB8E71600FF5213 /* VKCssHotReloader.m */; };
 		6CB89FE31DB8E71E00FF5213 /* SGDirWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB89FE21DB8E71E00FF5213 /* SGDirWatchdog.m */; };
+		6CC1E1A41DC77BCE00300D69 /* UIView+VKMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E1A21DC77BCE00300D69 /* UIView+VKMetrics.m */; };
 		6CED744B1DAE550E0021109E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744A1DAE550E0021109E /* main.m */; };
 		6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED744D1DAE550E0021109E /* AppDelegate.m */; };
 		6CED74511DAE550E0021109E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74501DAE550E0021109E /* ViewController.m */; };
@@ -38,6 +39,7 @@
 		6CED749C1DAE589B0021109E /* VKBackgroundcolorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74961DAE589B0021109E /* VKBackgroundcolorStyle.m */; };
 		6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74981DAE589B0021109E /* VKFontColorStyle.m */; };
 		6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */; };
+		6CF0CB6E1DC770E9002166A2 /* UIView+VKAddion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0CB6D1DC770E9002166A2 /* UIView+VKAddion.m */; };
 		6CF2D63B1DB3198E00489671 /* cssClass.css in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2D63A1DB3198E00489671 /* cssClass.css */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,9 @@
 		6CB89FDF1DB8E71600FF5213 /* VKCssHotReloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCssHotReloader.m; sourceTree = "<group>"; };
 		6CB89FE11DB8E71E00FF5213 /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDirWatchdog.h; sourceTree = "<group>"; };
 		6CB89FE21DB8E71E00FF5213 /* SGDirWatchdog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDirWatchdog.m; sourceTree = "<group>"; };
+		6CC1E1A11DC77BCE00300D69 /* UIView+VKMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VKMetrics.h"; sourceTree = "<group>"; };
+		6CC1E1A21DC77BCE00300D69 /* UIView+VKMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VKMetrics.m"; sourceTree = "<group>"; };
+		6CC1E1A31DC77BCE00300D69 /* VKUIKitMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKUIKitMarco.h; sourceTree = "<group>"; };
 		6CED74461DAE550E0021109E /* VKCssProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCssProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CED744A1DAE550E0021109E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CED744C1DAE550E0021109E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +112,8 @@
 		6CED74981DAE589B0021109E /* VKFontColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontColorStyle.m; sourceTree = "<group>"; };
 		6CED74991DAE589B0021109E /* VKFontSizeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFontSizeStyle.h; sourceTree = "<group>"; };
 		6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontSizeStyle.m; sourceTree = "<group>"; };
+		6CF0CB6C1DC770E9002166A2 /* UIView+VKAddion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VKAddion.h"; sourceTree = "<group>"; };
+		6CF0CB6D1DC770E9002166A2 /* UIView+VKAddion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VKAddion.m"; sourceTree = "<group>"; };
 		6CF2D63A1DB3198E00489671 /* cssClass.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cssClass.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +141,8 @@
 				6C38188D1DBB678C000825F1 /* VKTextDecorationStyle.m */,
 				6C38188F1DBB6E9A000825F1 /* VKFontWeightStyle.h */,
 				6C3818901DBB6E9A000825F1 /* VKFontWeightStyle.m */,
+				6CF0CB6C1DC770E9002166A2 /* UIView+VKAddion.h */,
+				6CF0CB6D1DC770E9002166A2 /* UIView+VKAddion.m */,
 			);
 			path = VKRuntimeStyles;
 			sourceTree = "<group>";
@@ -207,6 +216,9 @@
 		6CED74611DAE55ED0021109E /* VKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				6CC1E1A11DC77BCE00300D69 /* UIView+VKMetrics.h */,
+				6CC1E1A21DC77BCE00300D69 /* UIView+VKMetrics.m */,
+				6CC1E1A31DC77BCE00300D69 /* VKUIKitMarco.h */,
 				6C3818891DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.h */,
 				6C38188A1DBB64D8000825F1 /* NSMutableAttributedString+VKAttributedString.m */,
 				6CED74621DAE55ED0021109E /* NSObject+VKSingleton.h */,
@@ -352,6 +364,7 @@
 				6C38188E1DBB678C000825F1 /* VKTextDecorationStyle.m in Sources */,
 				6CED747A1DAE55ED0021109E /* VKCssClassManager.m in Sources */,
 				6CED74511DAE550E0021109E /* ViewController.m in Sources */,
+				6CF0CB6E1DC770E9002166A2 /* UIView+VKAddion.m in Sources */,
 				6CED744E1DAE550E0021109E /* AppDelegate.m in Sources */,
 				6CED749B1DAE589B0021109E /* VKCssStyleManager.m in Sources */,
 				6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */,
@@ -368,6 +381,7 @@
 				6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */,
 				6C3818751DBB5122000825F1 /* VKTextShadowStyle.m in Sources */,
 				6CED747B1DAE55ED0021109E /* VKCssClassModal.m in Sources */,
+				6CC1E1A41DC77BCE00300D69 /* UIView+VKMetrics.m in Sources */,
 				6C3818851DBB5F6E000825F1 /* VKTextTransformStyle.m in Sources */,
 				6C3818881DBB62D2000825F1 /* UIButton+VKAddion.m in Sources */,
 				6C8614901DBA466D004DCAA9 /* VKFontFamiltyStyle.m in Sources */,

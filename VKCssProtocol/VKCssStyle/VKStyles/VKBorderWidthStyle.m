@@ -26,6 +26,10 @@ VK_REGISTE_ATTRIBUTE()
     if ([target isKindOfClass:[UIView class]]) {
         UIView *view = (UIView *)target;
         view.layer.borderWidth = width;
+        
+        if ([view respondsToSelector:@selector(setCssBorderWidth:)]) {
+            [view performSelector:@selector(setCssBorderWidth:) withObject:[NSNumber numberWithFloat:width]];
+        }
     }
 
 }

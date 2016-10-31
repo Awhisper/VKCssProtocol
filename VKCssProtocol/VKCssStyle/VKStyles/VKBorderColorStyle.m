@@ -28,6 +28,10 @@ VK_REGISTE_ATTRIBUTE()
         UIView *view = (UIView *)target;
         view.layer.borderColor = color.CGColor;
         
+        if ([view respondsToSelector:@selector(setCssBorderColor:)]) {
+            [view performSelector:@selector(setCssBorderColor:) withObject:color];
+        }
+        
     }
 }
 
