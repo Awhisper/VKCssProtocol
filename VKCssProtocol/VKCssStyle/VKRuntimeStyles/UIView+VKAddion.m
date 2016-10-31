@@ -55,23 +55,69 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
--(void)setCssBorderColor:(UIColor *)cssBorderColor
-{
-    objc_setAssociatedObject(self, @selector(cssBorderColor), cssBorderColor, OBJC_ASSOCIATION_RETAIN);
+-(void)setCssTopBorderColor:(UIColor *)cssTopBorderColor{
+    objc_setAssociatedObject(self, @selector(cssTopBorderColor), cssTopBorderColor, OBJC_ASSOCIATION_RETAIN);
 }
 
--(UIColor *)cssBorderColor{
+-(UIColor *)cssTopBorderColor{
     return objc_getAssociatedObject(self, _cmd);
 }
 
--(void)setCssBorderWidth:(NSNumber *)cssBorderWidth{
-    objc_setAssociatedObject(self, @selector(cssBorderWidth), cssBorderWidth, OBJC_ASSOCIATION_RETAIN);
+-(void)setCssRightBorderColor:(UIColor *)cssRightBorderColor{
+    objc_setAssociatedObject(self, @selector(cssRightBorderColor), cssRightBorderColor, OBJC_ASSOCIATION_RETAIN);
 }
 
--(NSNumber *)cssBorderWidth{
+-(UIColor *)cssRightBorderColor{
     return objc_getAssociatedObject(self, _cmd);
 }
 
+-(void)setCssBottomBorderColor:(UIColor *)cssBottomBorderColor{
+    objc_setAssociatedObject(self, @selector(cssBottomBorderColor), cssBottomBorderColor, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(UIColor *)cssBottomBorderColor{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setCssLeftBorderColor:(UIColor *)cssLeftBorderColor{
+    objc_setAssociatedObject(self, @selector(cssLeftBorderColor), cssLeftBorderColor, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(UIColor *)cssLeftBorderColor{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setCssTopBorderWidth:(NSNumber *)cssTopBorderWidth{
+    objc_setAssociatedObject(self, @selector(cssTopBorderWidth), cssTopBorderWidth, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSNumber *)cssTopBorderWidth{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setCssLeftBorderWidth:(NSNumber *)cssLeftBorderWidth{
+    objc_setAssociatedObject(self, @selector(cssLeftBorderWidth), cssLeftBorderWidth, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSNumber *)cssLeftBorderWidth{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setCssBottomBorderWidth:(NSNumber *)cssBottomBorderWidth{
+    objc_setAssociatedObject(self, @selector(cssBottomBorderWidth), cssBottomBorderWidth, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSNumber *)cssBottomBorderWidth{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+-(void)setCssRightBorderWidth:(NSNumber *)cssRightBorderWidth{
+    objc_setAssociatedObject(self, @selector(cssRightBorderWidth), cssRightBorderWidth, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSNumber *)cssRightBorderWidth{
+    return objc_getAssociatedObject(self, _cmd);
+}
 
 
 //+(void)load
@@ -111,8 +157,8 @@
         if (!self.cssTopBorder) {
             self.cssTopBorder = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.width,0)];
         }
-        self.cssTopBorder.height = [self.cssBorderWidth floatValue];
-        self.cssTopBorder.backgroundColor = self.cssBorderColor;
+        self.cssTopBorder.height = [self.cssTopBorderWidth floatValue];
+        self.cssTopBorder.backgroundColor = self.cssTopBorderColor;
     }else{
         [self.cssTopBorder removeFromSuperview];
         self.cssTopBorder = nil;
@@ -122,9 +168,9 @@
         if (!self.cssRightBorder) {
             self.cssRightBorder = [[UIView alloc]initWithFrame:CGRectMake(0, self.width, 0,self.height)];
         }
-        self.cssRightBorder.left = self.width - [self.cssBorderWidth floatValue];
-        self.cssRightBorder.width = [self.cssBorderWidth floatValue];
-        self.cssRightBorder.backgroundColor = self.cssBorderColor;
+        self.cssRightBorder.left = self.width - [self.cssRightBorderWidth floatValue];
+        self.cssRightBorder.width = [self.cssRightBorderWidth floatValue];
+        self.cssRightBorder.backgroundColor = self.cssRightBorderColor;
     }else{
         [self.cssRightBorder removeFromSuperview];
         self.cssRightBorder = nil;
@@ -134,9 +180,9 @@
         if (!self.cssBottomBorder) {
             self.cssBottomBorder = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.width,0)];
         }
-        self.cssBottomBorder.top = self.height - [self.cssBorderWidth floatValue];
-        self.cssBottomBorder.height = [self.cssBorderWidth floatValue];
-        self.cssBottomBorder.backgroundColor = self.cssBorderColor;
+        self.cssBottomBorder.top = self.height - [self.cssBottomBorderWidth floatValue];
+        self.cssBottomBorder.height = [self.cssBottomBorderWidth floatValue];
+        self.cssBottomBorder.backgroundColor = self.cssBottomBorderColor;
     }else{
         [self.cssBottomBorder removeFromSuperview];
         self.cssBottomBorder = nil;
@@ -146,8 +192,8 @@
         if (!self.cssLeftBorder) {
             self.cssLeftBorder = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0,self.height)];
         }
-        self.cssLeftBorder.width = [self.cssBorderWidth floatValue];
-        self.cssLeftBorder.backgroundColor = self.cssBorderColor;
+        self.cssLeftBorder.width = [self.cssLeftBorderWidth floatValue];
+        self.cssLeftBorder.backgroundColor = self.cssLeftBorderColor;
     }else{
         [self.cssLeftBorder removeFromSuperview];
         self.cssLeftBorder = nil;

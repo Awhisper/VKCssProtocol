@@ -20,8 +20,20 @@
 
 @property(nonatomic,strong) UIView *cssLeftBorder;
 
-@property(nonatomic,strong) UIColor *cssBorderColor;
+@property(nonatomic,strong) UIColor *cssTopBorderColor;
 
-@property(nonatomic,strong) NSNumber *cssBorderWidth;
+@property(nonatomic,strong) UIColor *cssLeftBorderColor;
+
+@property(nonatomic,strong) UIColor *cssRightBorderColor;
+
+@property(nonatomic,strong) UIColor *cssBottomBorderColor;
+
+@property(nonatomic,strong) NSNumber *cssTopBorderWidth;
+
+@property(nonatomic,strong) NSNumber *cssLeftBorderWidth;
+
+@property(nonatomic,strong) NSNumber *cssRightBorderWidth;
+
+@property(nonatomic,strong) NSNumber *cssBottomBorderWidth;
 
 @end
