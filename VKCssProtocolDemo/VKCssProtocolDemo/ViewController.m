@@ -26,7 +26,6 @@
     
     [VKCssHotReloader hotReloaderListenCssPath:cssPath];
     [VKCssHotReloader startHotReloader];
-    [VKCssClassManager readCssFilePath:@"cssDemo"];
 #else
     VKLoadBundleCss(@"cssDemo");
     
@@ -64,10 +63,7 @@
     lbabc.cssClass = @"commenView2 commenText1";
     btabcd.cssClass = @"commenView1 commenText2";
     lbabcd.cssClass = @"commenView2 commenText2";
-
-    btabc.cssStyle = @"background-color:black border-color:black";
-    
-    
+        
 }
 
 
