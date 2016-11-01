@@ -29,6 +29,7 @@
 -(void)setCssTransform:(NSString *)cssTransform
 {
     objc_setAssociatedObject(self, @selector(cssTransform), cssTransform, OBJC_ASSOCIATION_RETAIN);
+    self.text = self.text;
 }
 
 -(NSString *)cssTransform{
@@ -37,6 +38,7 @@
 
 -(void)setCssDecoration:(NSString *)cssDecoration{
     objc_setAssociatedObject(self, @selector(cssDecoration), cssDecoration, OBJC_ASSOCIATION_RETAIN);
+    self.text = self.text;
 }
 
 -(NSString *)cssDecoration{
@@ -45,6 +47,7 @@
 
 -(void)setCssFontWeight:(NSString *)cssFontWeight{
     objc_setAssociatedObject(self, @selector(cssFontWeight), cssFontWeight, OBJC_ASSOCIATION_RETAIN);
+    self.text = self.text;
 }
 
 -(NSString *)cssFontWeight

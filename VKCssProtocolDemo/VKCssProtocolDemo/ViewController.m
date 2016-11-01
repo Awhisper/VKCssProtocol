@@ -44,25 +44,28 @@
     [self initCss];
     
     UILabel *btabc = [[UILabel alloc]initWithFrame:CGRectMake(20, 50, self.view.bounds.size.width - 40, 80)];
-    btabc.cssClass = @"commenView1 commenText1";
     btabc.text = @"commenView1 commenText1";
     [self.view addSubview:btabc];
     
     UILabel *lbabc = [[UILabel alloc]initWithFrame:CGRectMake(20, 150, self.view.bounds.size.width - 40, 80)];
-    lbabc.cssClass = @"commenView2 commenText1";
     lbabc.text = @"commenView2 commenText1";
     [self.view addSubview:lbabc];
     
     UILabel *btabcd = [[UILabel alloc]initWithFrame:CGRectMake(20, 250, self.view.bounds.size.width - 40, 80)];
-    btabcd.cssClass = @"commenView1 commenText2";
     btabcd.text = @"commenView1 commenText2";
     [self.view addSubview:btabcd];
     
     UILabel *lbabcd = [[UILabel alloc]initWithFrame:CGRectMake(20 , 350, self.view.bounds.size.width - 40, 80)];
-    lbabcd.cssClass = @"commenView2 commenText2";
     lbabcd.text = @"commenView2 commenText2";
     [self.view addSubview:lbabcd];
+    
+    
+    btabc.cssClass = @"commenView1 commenText1";
+    lbabc.cssClass = @"commenView2 commenText1";
+    btabcd.cssClass = @"commenView1 commenText2";
+    lbabcd.cssClass = @"commenView2 commenText2";
 
+    btabc.cssStyle = @"background-color:black border-color:black";
     
     
 }
