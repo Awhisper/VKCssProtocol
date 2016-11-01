@@ -36,4 +36,8 @@
 
 @property(nonatomic,strong) NSNumber *cssBottomBorderWidth;
 
+-(void)refreshBorderCSS;
+
+-(void)clearBorderCSS;
+
 @end

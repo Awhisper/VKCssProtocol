@@ -116,10 +116,16 @@ VK_DEF_SINGLETON
 
 +(void)reloadCssFile
 {
+    [VKCssClassManager clearCssFile];
     NSDictionary *fileArray = [[VKCssClassManager singleton].cssFileArr.allKeys copy];
     for (NSString * cssFilePath in fileArray) {
         [VKCssClassManager readCssFilePath:cssFilePath];
     }
+}
+
++(void)clearCssFile
+{
+    [[VKCssClassManager singleton].cssClassDic removeAllObjects];
 }
 
 +(void)parseCssContent:(NSString *)cssContent

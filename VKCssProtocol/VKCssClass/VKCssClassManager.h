@@ -17,8 +17,17 @@
 #define defCssClass(name,info) \
 autoreleasepool{ [VKCssClassManager defineCssClass:name styleInfo:info];}; \
 
-#define loadCssFile(bundlefile) \
+#define VKLoadBundleCss(css) \
+@loadBundleCss(css); \
+
+#define VKLoadPathCss(css) \
+@loadPathCss(css);\
+
+#define loadBundleCss(bundlefile) \
 autoreleasepool{ [VKCssClassManager readBundleCssFile:bundlefile];}; \
+
+#define loadPathCss(bundlefile) \
+autoreleasepool{ [VKCssClassManager readCssFilePath:bundlefile];}; \
 
 @interface VKCssClassManager : NSObject
 
@@ -36,6 +45,8 @@ VK_AS_SINGLETON
 + (void)readCssFilePath:(NSString *)cssFilePath;
 
 + (void)reloadCssFile;
+
++ (void)clearCssFile;
 
 
 @end

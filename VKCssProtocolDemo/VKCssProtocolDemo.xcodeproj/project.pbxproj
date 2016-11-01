@@ -44,7 +44,7 @@
 		6CED749D1DAE589B0021109E /* VKFontColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED74981DAE589B0021109E /* VKFontColorStyle.m */; };
 		6CED749E1DAE589B0021109E /* VKFontSizeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */; };
 		6CF0CB6E1DC770E9002166A2 /* UIView+VKAddion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0CB6D1DC770E9002166A2 /* UIView+VKAddion.m */; };
-		6CF2D63B1DB3198E00489671 /* cssClass.css in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2D63A1DB3198E00489671 /* cssClass.css */; };
+		6CF2D63B1DB3198E00489671 /* cssDemo.css in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2D63A1DB3198E00489671 /* cssDemo.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,7 +126,7 @@
 		6CED749A1DAE589B0021109E /* VKFontSizeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKFontSizeStyle.m; sourceTree = "<group>"; };
 		6CF0CB6C1DC770E9002166A2 /* UIView+VKAddion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VKAddion.h"; sourceTree = "<group>"; };
 		6CF0CB6D1DC770E9002166A2 /* UIView+VKAddion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VKAddion.m"; sourceTree = "<group>"; };
-		6CF2D63A1DB3198E00489671 /* cssClass.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cssClass.css; sourceTree = "<group>"; };
+		6CF2D63A1DB3198E00489671 /* cssDemo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = cssDemo.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +198,7 @@
 		6CED74481DAE550E0021109E /* VKCssProtocolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6CF2D63A1DB3198E00489671 /* cssClass.css */,
+				6CF2D63A1DB3198E00489671 /* cssDemo.css */,
 				6CED744C1DAE550E0021109E /* AppDelegate.h */,
 				6CED744D1DAE550E0021109E /* AppDelegate.m */,
 				6CED744F1DAE550E0021109E /* ViewController.h */,
@@ -366,7 +366,7 @@
 			files = (
 				6CED74591DAE550E0021109E /* LaunchScreen.storyboard in Resources */,
 				6CED74561DAE550E0021109E /* Assets.xcassets in Resources */,
-				6CF2D63B1DB3198E00489671 /* cssClass.css in Resources */,
+				6CF2D63B1DB3198E00489671 /* cssDemo.css in Resources */,
 				6CED74541DAE550E0021109E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

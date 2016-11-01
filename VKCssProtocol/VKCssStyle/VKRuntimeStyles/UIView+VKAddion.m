@@ -204,4 +204,13 @@
     }
 }
 
+-(void)refreshBorderCSS
+{
+    [self vkRefreshBorder];
+}
+
+-(void)clearBorderCSS{
+    self.cssClipBorder = nil;
+}
+
 @end

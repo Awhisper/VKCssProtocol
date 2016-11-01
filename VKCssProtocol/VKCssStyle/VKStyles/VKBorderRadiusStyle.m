@@ -27,6 +27,7 @@ VK_REGISTE_ATTRIBUTE()
     if ([target isKindOfClass:[UIView class]]) {
         UIView *view = (UIView *)target;
         view.layer.cornerRadius = radius;
+        view.clipsToBounds = YES;
     }
 }
 @end

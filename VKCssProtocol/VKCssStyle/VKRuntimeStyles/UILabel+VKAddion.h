@@ -16,4 +16,6 @@
 
 @property(nonatomic,strong) NSString *cssFontWeight;
 
+-(void)refreshLabelCSS;
+
 @end

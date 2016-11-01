@@ -90,4 +90,9 @@
     [self vk_setText:finalText];
 }
 
+-(void)refreshLabelCSS{
+    NSString *text = self.text;
+    self.text = text;
+}
+
 @end

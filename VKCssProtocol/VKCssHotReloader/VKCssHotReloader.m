@@ -10,6 +10,8 @@
 #import "SGDirWatchdog.h"
 #import "VKCssClassManager.h"
 #import "UIView+VKCssProtocol.h"
+#import "UILabel+VKAddion.h"
+#import "UIView+VKAddion.h"
 @interface VKCssHotReloader ()
 
 @property (nonatomic,assign) BOOL isHotReload;
@@ -36,26 +38,33 @@ VK_DEF_SINGLETON
 }
 
 +(void)hotReloaderListenCssPath:(NSString *)path{
+#if TARGET_IPHONE_SIMULATOR
     [VKCssClassManager readCssFilePath:path];
     [[VKCssHotReloader singleton]startCSSPath:path];
+#endif
 }
 
 +(void)startHotReloader{
+#if TARGET_IPHONE_SIMULATOR
     [[VKCssHotReloader singleton] watchJSFile:YES];
     [VKCssHotReloader singleton].isHotReload = YES;
+#endif
 }
 
 +(void)endHotReloader{
+#if TARGET_IPHONE_SIMULATOR
     [VKCssHotReloader singleton].isHotReload = NO;
     [[VKCssHotReloader singleton].viewListenArr removeAllObjects];
     [[VKCssHotReloader singleton] watchJSFile:NO];
+#endif
 }
 
 +(void)addHotReloaderTarger:(UIView *)target{
+#if TARGET_IPHONE_SIMULATOR
     if ([VKCssHotReloader singleton].isHotReload) {
         [[VKCssHotReloader singleton].viewListenArr addObject:target];
     }
-    
+#endif
 }
 
 
@@ -75,6 +84,7 @@ VK_DEF_SINGLETON
 {
 #if TARGET_IPHONE_SIMULATOR
     SGDirWatchdog *watchDog = [[SGDirWatchdog alloc] initWithPath:path update:^{
+        [[VKCssHotReloader singleton] clearLastCssUI];
         [VKCssClassManager reloadCssFile];
         [[VKCssHotReloader singleton] refreshListeningUI];
         NSLog(@"change======");
@@ -83,10 +93,20 @@ VK_DEF_SINGLETON
 #endif
 }
 
+-(void)clearLastCssUI{
+    for (UIView *view in [self.viewListenArr copy]) {
+        [view clearBorderCSS];
+    }
+}
+
 -(void)refreshListeningUI
 {
     for (UIView *view in [self.viewListenArr copy]) {
         [view refreshCSS];
+        [view refreshBorderCSS];
+        if ([view isKindOfClass:[UILabel class]]) {
+            [(UILabel *)view refreshLabelCSS];
+        }
     }
 }
 
