@@ -1,31 +1,25 @@
 .commenView1{
     background-color:orange;
     border-top: 3px solid #9AFF02;
-    border-left: 3px solid black;
+    border-left: 4px solid red;
 }
-
 .commenView2{
     background-color:#FF9D6F;
-    border-color:red;
+    border-color:black;
     border-width:2px;
-    border-radius:10px;
+    border-radius:15px;
 }
-
 .commenText1{
-    font-family: italicSystemFont ;
     color:white ;
     font-size: 20px ;
-    text-align : center;
-    text-transform: capitalize;
+    text-align : right;
+    text-transform: lowercase;
     text-decoration: line-through;
 }
-
-
 .commenText2{
     color:black ;
     font-size: 15px ;
     text-align : right;
     text-transform: uppercase;
-    text-decoration: underline;
-    background-image:image
+    text-decoration: line-through;
 }
