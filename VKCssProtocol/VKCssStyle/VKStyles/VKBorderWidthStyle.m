@@ -8,6 +8,9 @@
 
 #import "VKBorderWidthStyle.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
 @implementation VKBorderWidthStyle
 
 VK_REGISTE_ATTRIBUTE()
@@ -33,5 +36,8 @@ VK_REGISTE_ATTRIBUTE()
     }
 
 }
+
+#pragma clang diagnostic pop
+
 
 @end

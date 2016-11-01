@@ -8,6 +8,9 @@
 
 #import "UIColor+VKUtlities.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+
 @implementation UIColor (VKUtlities)
 + (UIColor *) vk_colorWithHex:(int)hex{
     return [UIColor vk_colorWithHex:hex alpha:1.0];
@@ -70,4 +73,6 @@
     return color;
     
 }
+
+#pragma clang diagnostic pop
 @end

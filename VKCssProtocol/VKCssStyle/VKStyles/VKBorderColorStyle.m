@@ -9,6 +9,9 @@
 #import "VKBorderColorStyle.h"
 #import "UIColor+VKUtlities.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
 @implementation VKBorderColorStyle
 
 
@@ -35,5 +38,5 @@ VK_REGISTE_ATTRIBUTE()
     }
 }
 
-
+#pragma clang diagnostic pop
 @end

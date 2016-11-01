@@ -10,6 +10,10 @@
 #import <objc/runtime.h>
 #import "VKCssStyleManager.h"
 #import "VKCssClassManager.h"
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
 @implementation UIView (VKCssProtocol)
 
 -(void)setCssClass:(NSString *)cssClass{
@@ -68,4 +72,7 @@
     self.cssClass = oldClass;
     self.cssStyle = oldStyle;
 }
+
+
+#pragma clang diagnostic pop
 @end
