@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "VKCssProtocol.h"
 #import "VKCssHotReloader.h"
+#import "NSMutableAttributedString+VKAttributedString.h"
 @interface ViewController ()
 
 @end
@@ -50,7 +51,6 @@
     lbabc.cssClass = @"commenBar commenText";
     lbabc.text = @"aaaaabbbbb";
     [self.view addSubview:lbabc];
-    
     
     
 }
